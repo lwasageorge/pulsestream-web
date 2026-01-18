@@ -4,224 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PulseStream Lab App - Premium Laboratory Information System. Smart Diagnostics, Fast Workflows, Built for Africa.">
-    <title>PulseStream Lab App | Smart Diagnostics for Africa</title>
+    <meta name="author" content="Lwasa George">
+    <title>PulseStream Lab App | Smarter Labs. Faster Workflows.</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
             --primary: #0056D2;       /* PulseStream Royal Blue */
-            --secondary: #003c96;     /* Darker Blue for hover */
-            --accent: #00d4ff;        /* Cyan for modern accents */
+            --secondary: #004494;     /* Darker Blue for hover */
+            --accent: #0ea5e9;        /* Sky blue accents */
             --dark: #0f172a;          /* Slate dark for text */
             --light: #f8fafc;         /* Very light grey background */
             --white: #ffffff;
-            --success: #10b981;       /* Green for WhatsApp/Status */
+            --success: #25D366;       /* WhatsApp Green */
+            --mtn: #fbbf24;           /* MTN Yellow */
+            --airtel: #ef4444;        /* Airtel Red */
         }
 
-        /* --- GLOBAL RESET & TYPOGRAPHY --- */
+        /* --- GLOBAL RESET --- */
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; color: var(--dark); background-color: var(--white); line-height: 1.6; }
         a { text-decoration: none; transition: 0.3s; }
         ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* --- BUTTONS --- */
+        .btn { display: inline-block; padding: 0.9rem 2rem; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s; }
+        .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 15px rgba(0, 86, 210, 0.3); }
+        .btn-primary:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 86, 210, 0.4); }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+        .btn-outline:hover { background: var(--primary); color: white; }
 
         /* --- NAVIGATION --- */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; }
-        .logo i { font-size: 1.8rem; }
-        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        header { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.04); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.5px; }
+        .logo i { font-size: 1.6rem; }
+        .nav-links { display: flex; gap: 2.5rem; align-items: center; }
         .nav-links a { color: var(--dark); font-weight: 500; font-size: 0.95rem; }
         .nav-links a:hover { color: var(--primary); }
-        .btn-primary {
-            background: var(--primary);
-            color: white !important;
-            padding: 0.8rem 1.8rem;
-            border-radius: 50px;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0, 86, 210, 0.3);
-        }
-        .btn-primary:hover { background: var(--secondary); transform: translateY(-2px); }
 
         /* --- HERO SECTION --- */
-        .hero {
-            padding: 160px 2rem 100px;
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero p { font-size: 1.25rem; color: #64748b; max-width: 700px; margin: 0 auto 2.5rem; }
-        .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-        .btn-outline {
-            border: 2px solid var(--primary);
-            color: var(--primary) !important;
-            padding: 0.8rem 1.8rem;
-            border-radius: 50px;
-            font-weight: 600;
-        }
-        .btn-outline:hover { background: var(--primary); color: white !important; }
+        .hero { padding: 180px 2rem 100px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); text-align: center; position: relative; overflow: hidden; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 1.5rem; line-height: 1.1; color: var(--dark); }
+        .hero h1 span { color: var(--primary); }
+        .hero p { font-size: 1.25rem; color: #475569; max-width: 700px; margin: 0 auto 2.5rem; }
+        .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .system-req { font-size: 0.9rem; color: #64748b; background: rgba(255,255,255,0.6); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; }
 
-        /* --- APP SHOWCASE (IMAGES) --- */
-        .showcase { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .app-screen {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            border: 1px solid #e2e8f0;
-            transition: transform 0.3s;
-        }
-        .app-screen:hover { transform: translateY(-10px); }
-        .app-screen img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            object-position: top;
-            display: block;
-            background: #cbd5e1; /* Placeholder color if image missing */
-        }
+        /* --- PILLARS GRID --- */
+        .pillars { background: var(--white); padding: 6rem 2rem; }
+        .section-header { text-align: center; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .section-header h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+        .section-header p { color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        
+        .pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2.5rem; max-width: 1200px; margin: 0 auto; }
+        .pillar-card { padding: 2.5rem 2rem; border-radius: 16px; background: var(--light); transition: 0.3s; border: 1px solid #f1f5f9; text-align: center; }
+        .pillar-card:hover { background: white; box-shadow: 0 10px 40px rgba(0,0,0,0.06); transform: translateY(-5px); border-color: #e2e8f0; }
+        .pillar-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem; background: #e0f2fe; width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin-inline: auto; }
+        .pillar-card h3 { margin-bottom: 1rem; font-size: 1.25rem; }
+        .pillar-card p { color: #64748b; font-size: 0.95rem; }
+
+        /* --- APP SHOWCASE --- */
+        .showcase { padding: 6rem 2rem; background: #0f172a; color: white; }
+        .showcase .section-header h2 { color: white; }
+        .showcase .section-header p { color: var(--accent); }
+        .showcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; max-width: 1200px; margin: 3rem auto 0; }
+        .app-screen { background: var(--dark); border-radius: 16px; overflow: hidden; border: 1px solid #334155; transition: 0.3s; }
+        .app-screen:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .app-screen img { width: 100%; height: 220px; object-fit: cover; object-position: top; border-bottom: 1px solid #334155; }
         .screen-info { padding: 1.5rem; }
-        .screen-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--dark); }
-        .screen-info p { font-size: 0.9rem; color: #64748b; }
+        .screen-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: white; }
+        .screen-info p { font-size: 0.9rem; color: #94a3b8; }
 
-        /* --- FEATURES / PILLARS --- */
-        .pillars { background: var(--white); padding: 5rem 2rem; }
-        .section-title { text-align: center; margin-bottom: 3rem; }
-        .section-title h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
-        .section-title span { color: var(--primary); }
-        
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .pillar-card {
-            text-align: center;
-            padding: 2rem;
-            border-radius: 12px;
-            background: var(--light);
-            transition: 0.3s;
-        }
-        .pillar-card:hover { background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .pillar-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-        }
-
-        /* --- ABOUT OWNER --- */
-        .about-section { background: var(--dark); color: white; padding: 5rem 2rem; }
-        .about-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            flex-wrap: wrap;
-        }
-        .owner-img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            border: 4px solid var(--primary);
-            object-fit: cover;
-            background: #334155; /* Placeholder */
-        }
-        .owner-info { flex: 1; }
-        .owner-info h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        .owner-role { color: var(--accent); font-weight: 600; margin-bottom: 1.5rem; display: block; }
+        /* --- ABOUT & CONTACT --- */
+        .about-section { padding: 6rem 2rem; background: var(--white); }
+        .about-container { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; }
+        .owner-img { width: 280px; height: 280px; border-radius: 50%; border: 5px solid var(--primary); object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .owner-info h2 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--dark); }
+        .owner-role { color: var(--primary); font-weight: 600; margin-bottom: 1.5rem; display: block; font-size: 1.1rem; }
         .social-icons { margin-top: 2rem; display: flex; gap: 1rem; }
-        .social-btn {
-            width: 45px; height: 45px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            color: white; font-size: 1.2rem;
-            transition: 0.3s;
-        }
-        .social-btn.yt:hover { background: #FF0000; }
-        .social-btn.tk:hover { background: #000000; background-image: linear-gradient(to right, #00f2ea, #ff0050); }
-        .social-btn.fb:hover { background: #1877F2; }
+        .social-btn { width: 50px; height: 50px; background: #f1f5f9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 1.2rem; transition: 0.3s; }
+        .social-btn:hover { background: var(--primary); color: white; }
 
-        /* --- CONTACT & PAYMENT --- */
-        .contact-section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 4rem;
-        }
-        .contact-card h3 { margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px; }
-        .contact-list li { margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; font-size: 1.1rem; }
-        .contact-list i { color: var(--primary); }
+        /* --- PAYMENT SECTION --- */
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1200px; margin: 4rem auto 0; }
+        .contact-card { padding: 2rem; }
+        .contact-list li { margin-bottom: 1.2rem; display: flex; align-items: center; gap: 1rem; font-size: 1.05rem; color: #334155; }
+        .contact-list i { color: var(--primary); font-size: 1.2rem; width: 25px; }
         
-        .payment-box {
-            background: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            padding: 2rem;
-            border-radius: 12px;
-        }
-        .payment-box h3 { color: #166534; border-color: #166534; }
+        .payment-box { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #e2e8f0; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .payment-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid #f1f5f9; }
+        .payment-header i { font-size: 2rem; color: #166534; }
+        .payment-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+        .pay-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0; }
 
         /* --- FOOTER --- */
-        footer { background: #0f172a; color: #94a3b8; padding: 2rem; text-align: center; font-size: 0.9rem; border-top: 1px solid #1e293b; }
-        
-        /* --- FLOATING WHATSAPP --- */
-        .float-wa {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            color: white;
-            width: 60px; height: 60px;
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 30px;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-        }
-        .float-wa:hover { transform: scale(1.1); background: #1ebc57; }
+        footer { background: var(--dark); color: #94a3b8; padding: 3rem 2rem; text-align: center; font-size: 0.9rem; margin-top: 4rem; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; }
+        .footer-links a { color: #cbd5e1; hover: white; }
 
-        /* Mobile tweaks */
+        /* --- MOBILE --- */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } /* Simplified for demo */
-            .about-container { text-align: center; justify-content: center; }
+            .nav-links { display: none; } /* Hidden for mobile simplicity */
+            .about-container { justify-content: center; text-align: center; }
+            .owner-img { margin: 0 auto; width: 200px; height: 200px; }
         }
+
+        /* --- FLOATING WA --- */
+        .float-wa { position: fixed; bottom: 30px; right: 30px; background: var(--success); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); z-index: 9999; transition: 0.3s; }
+        .float-wa:hover { transform: scale(1.1); }
     </style>
 </head>
 <body>
@@ -233,79 +129,88 @@
             </div>
             <div class="nav-links">
                 <a href="#features">Features</a>
-                <a href="#showcase">App Showcase</a>
+                <a href="#showcase">Interface</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="#" class="btn-primary"><i class="fa-brands fa-windows"></i> Download App</a>
+                <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
+                    <i class="fa-brands fa-windows"></i> Download
+                </a>
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Smart Diagnostics. <br> Faster Workflows.</h1>
-        <p>A premium, medically certified LIS designed in Africa, for the World. Built for clinics, diagnostic centers, and hospitals requiring fast, offline-capable workflows.</p>
+        <h1>Smart Diagnostics.<br><span>Fast Workflows.</span></h1>
+        <p>The premium Laboratory Information System (LIS) built for Africa. Offline-ready, accurate, and designed for clinics, hospitals, and diagnostic centers.</p>
+        
         <div class="hero-buttons">
-            <a href="#" class="btn-primary">Get Started Free</a>
-            <a href="#showcase" class="btn-outline">View Demo</a>
+            <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
+                <i class="fa-solid fa-download"></i> Download for Windows
+            </a>
+            <a href="http://www.youtube.com/@pulsestreamlive" target="_blank" class="btn btn-outline">
+                <i class="fa-brands fa-youtube"></i> Watch Demo
+            </a>
+        </div>
+        
+        <div class="system-req">
+            <i class="fa-brands fa-windows"></i> Requires Windows 10 or 11 (64-bit)
         </div>
     </section>
 
     <section id="features" class="pillars">
-        <div class="section-title">
-            <h2>Why Choose <span>PulseStream?</span></h2>
-            <p>Reliability | Accuracy | Speed | Professionalism</p>
+        <div class="section-header">
+            <p>Brand Pillars</p>
+            <h2>Why Choose PulseStream?</h2>
         </div>
         <div class="pillars-grid">
             <div class="pillar-card">
-                <i class="fa-solid fa-bolt pillar-icon"></i>
-                <h3>Fast Workflows</h3>
-                <p>Designed to reduce patient waiting time and speed up results entry.</p>
+                <div class="pillar-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Speed & Reliability</h3>
+                <p>Designed to reduce patient waiting time with instant results entry and auto-verification.</p>
             </div>
             <div class="pillar-card">
-                <i class="fa-solid fa-wifi pillar-icon"></i>
+                <div class="pillar-icon"><i class="fa-solid fa-wifi"></i></div>
                 <h3>Africa-First Readiness</h3>
-                <p>Works 100% offline. No internet required for daily lab operations.</p>
+                <p>Works 100% offline. No internet required for daily lab operations or printing reports.</p>
             </div>
             <div class="pillar-card">
-                <i class="fa-solid fa-file-contract pillar-icon"></i>
+                <div class="pillar-icon"><i class="fa-solid fa-user-doctor"></i></div>
                 <h3>Medically Certified</h3>
-                <p>Built by professionals for professionals. Accurate referencing.</p>
+                <p>Built by a Medical Laboratory Professional. Uses accurate referencing and standard units.</p>
             </div>
             <div class="pillar-card">
-                <i class="fa-solid fa-paintbrush pillar-icon"></i>
+                <div class="pillar-icon"><i class="fa-solid fa-gem"></i></div>
                 <h3>Modern UI Elegance</h3>
-                <p>A beautiful, premium interface that makes lab work enjoyable.</p>
+                <p>A premium, clean interface that makes lab management professional and enjoyable.</p>
             </div>
         </div>
     </section>
 
     <section id="showcase" class="showcase">
-        <div class="section-title">
-            <h2>World Class <span>Interface</span></h2>
-            <p>Experience the power of a premium Desktop LIS.</p>
+        <div class="section-header">
+            <p>Premium Experience</p>
+            <h2>World Class Interface</h2>
         </div>
         <div class="showcase-grid">
             <div class="app-screen">
-                <img src="images/login.png" alt="PulseStream Login Window">
+                <img src="images/login.png" alt="PulseStream Login">
                 <div class="screen-info">
                     <h3>Secure Login</h3>
-                    <p>Role-based access control with secure encryption for Admins and Technicians.</p>
+                    <p>Role-based access for Admins and Technicians. Secure encryption standard.</p>
                 </div>
             </div>
-
             <div class="app-screen">
                 <img src="images/dashboard.png" alt="PulseStream Dashboard">
                 <div class="screen-info">
                     <h3>Financial Dashboard</h3>
-                    <p>Real-time analytics for Revenue, Patient Inflow, and Insurance claims.</p>
+                    <p>Track Revenue (Cash/Insurance/Credit), Patient Inflow, and Lab performance live.</p>
                 </div>
             </div>
-
             <div class="app-screen">
-                <img src="images/results.png" alt="PulseStream Results Entry">
+                <img src="images/results.png" alt="PulseStream Results">
                 <div class="screen-info">
                     <h3>Smart Results Entry</h3>
-                    <p>Pre-configured templates for 200+ tests including CBC, Malaria, and Widal.</p>
+                    <p>200+ Pre-configured tests (CBC, Malaria, Widal) with auto-normal ranges.</p>
                 </div>
             </div>
         </div>
@@ -314,64 +219,80 @@
     <section id="about" class="about-section">
         <div class="about-container">
             <img src="images/profile.png" alt="Lwasa George" class="owner-img">
+            
             <div class="owner-info">
                 <h2>Lwasa George</h2>
-                <span class="owner-role">Founder & Product Owner | Medical Laboratory Technician</span>
-                <p>Building "PulseStream Lab App" to revolutionize diagnostics in Africa. Also the founder of PulseStreamLive, educating thousands on social media.</p>
+                <span class="owner-role">Medical Laboratory Technician | Founder PulseStreamLive</span>
+                <p>Building "PulseStream Lab App" to revolutionize diagnostics in Africa. I am dedicated to creating smarter labs and faster workflows for medical professionals across the continent.</p>
                 
                 <div class="social-icons">
-                    <a href="http://www.youtube.com/@pulsestreamlive" target="_blank" class="social-btn yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.tiktok.com/@pulsestreamlive11" target="_blank" class="social-btn tk" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://www.facebook.com/share/16P8hT3bdf" target="_blank" class="social-btn fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://wa.me/256700677555" target="_blank" class="social-btn" style="background:#25D366" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://www.youtube.com/@pulsestreamlive" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube" style="color:red"></i></a>
+                    <a href="https://www.tiktok.com/@pulsestreamlive11" target="_blank" class="social-btn" title="TikTok"><i class="fa-brands fa-tiktok" style="color:black"></i></a>
+                    <a href="https://www.facebook.com/share/16P8hT3bdf" target="_blank" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook" style="color:blue"></i></a>
+                    <a href="https://wa.me/256700677555" target="_blank" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp" style="color:green"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contact" class="about-section" style="background: #f8fafc;">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+        </div>
         <div class="contact-grid">
             
             <div class="contact-card">
-                <h3>Contact Support</h3>
+                <h3 style="margin-bottom:1.5rem;">Contact Support</h3>
                 <ul class="contact-list">
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:lwasageorge60@gmail.com" style="color:inherit">lwasageorge60@gmail.com</a></li>
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:pulsestreamlive@gmail.com" style="color:inherit">pulsestreamlive@gmail.com</a></li>
-                    <li><i class="fa-solid fa-phone"></i> +256 700 677 555 (UG)</li>
-                    <li><i class="fa-solid fa-phone"></i> +211 920 677 555 (SSD)</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Kampala, Uganda / Juba, SSD</li>
+                    <li><i class="fa-solid fa-envelope"></i> lwasageorge60@gmail.com</li>
+                    <li><i class="fa-solid fa-envelope"></i> pulsestreamlive@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +256 700 677 555 (Uganda)</li>
+                    <li><i class="fa-solid fa-phone"></i> +256 761 174 741 (Uganda)</li>
+                    <li><i class="fa-solid fa-phone"></i> +211 920 677 555 (South Sudan)</li>
                 </ul>
             </div>
 
-            <div class="contact-card payment-box">
-                <h3><i class="fa-solid fa-credit-card"></i> Official Payment</h3>
-                <p style="margin-bottom:1rem;">Use these details for License Activation.</p>
-                <ul class="contact-list">
-                    <li>
-                        <i class="fa-solid fa-mobile-screen" style="color:#fbbf24;"></i> 
-                        <div>
-                            <strong>MTN Mobile Money</strong><br>
-                            0761 174 741 (Lwasa George)
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-mobile-screen" style="color:#ef4444;"></i> 
-                        <div>
-                            <strong>Airtel Money</strong><br>
-                            0700 677 555 (Lwasa George)
-                        </div>
-                    </li>
-                </ul>
+            <div class="payment-box">
+                <div class="payment-header">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h3 style="margin:0;">Official Payment</h3>
+                        <span style="font-size:0.85rem; color:#64748b;">License Activation Accounts</span>
+                    </div>
+                </div>
+
+                <div class="payment-item">
+                    <div class="pay-icon" style="background: var(--mtn);">MTN</div>
+                    <div>
+                        <strong>MTN Mobile Money</strong><br>
+                        <span style="color:#475569;">0761 174 741</span><br>
+                        <span style="font-size:0.85rem; color:#94a3b8;">Lwasa George</span>
+                    </div>
+                </div>
+
+                <div class="payment-item">
+                    <div class="pay-icon" style="background: var(--airtel);">AIR</div>
+                    <div>
+                        <strong>Airtel Money</strong><br>
+                        <span style="color:#475569;">0700 677 555</span><br>
+                        <span style="font-size:0.85rem; color:#94a3b8;">Lwasa George</span>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
     <footer>
+        <div class="footer-links">
+            <a href="http://www.youtube.com/@pulsestreamlive" target="_blank">YouTube</a>
+            <a href="https://wa.me/256700677555" target="_blank">WhatsApp Support</a>
+            <a href="#">Privacy Policy</a>
+        </div>
         <p>&copy; 2026 PulseStream Lab App. Developed by Lwasa George. All Rights Reserved.</p>
     </footer>
 
-    <a href="https://wa.me/256700677555" class="float-wa" target="_blank">
+    <a href="https://wa.me/256700677555" class="float-wa" target="_blank" title="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
