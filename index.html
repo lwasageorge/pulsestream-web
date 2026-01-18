@@ -22,6 +22,7 @@
             --success: #25D366;       /* WhatsApp Green */
             --mtn: #fbbf24;           /* MTN Yellow */
             --airtel: #ef4444;        /* Airtel Red */
+            --selar: #7C3AED;         /* Selar Purple */
         }
 
         /* --- GLOBAL RESET --- */
@@ -30,11 +31,17 @@
         a { text-decoration: none; transition: 0.3s; }
         ul { list-style: none; }
         img { max-width: 100%; display: block; }
+        
+        /* --- ANIMATIONS --- */
+        .fade-in-up { animation: fadeUp 1s ease-out forwards; opacity: 0; transform: translateY(30px); }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
         /* --- BUTTONS --- */
-        .btn { display: inline-block; padding: 0.9rem 2rem; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s; }
+        .btn { display: inline-flex; align-items: center; gap: 10px; padding: 0.9rem 2rem; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s; border: none; }
         .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 15px rgba(0, 86, 210, 0.3); }
         .btn-primary:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 86, 210, 0.4); }
+        .btn-selar { background: var(--selar); color: white; box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3); }
+        .btn-selar:hover { background: #6D28D9; transform: translateY(-2px); }
         .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
         .btn-outline:hover { background: var(--primary); color: white; }
 
@@ -55,6 +62,11 @@
         .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
         .system-req { font-size: 0.9rem; color: #64748b; background: rgba(255,255,255,0.6); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; }
 
+        /* --- VIDEO DEMO SECTION --- */
+        .video-section { background: #0f172a; padding: 4rem 2rem; text-align: center; color: white; }
+        .video-container { max-width: 800px; margin: 2rem auto 0; border: 4px solid #334155; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); position: relative; padding-bottom: 56.25%; height: 0; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
         /* --- PILLARS GRID --- */
         .pillars { background: var(--white); padding: 6rem 2rem; }
         .section-header { text-align: center; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto; }
@@ -69,16 +81,23 @@
         .pillar-card p { color: #64748b; font-size: 0.95rem; }
 
         /* --- APP SHOWCASE --- */
-        .showcase { padding: 6rem 2rem; background: #0f172a; color: white; }
-        .showcase .section-header h2 { color: white; }
-        .showcase .section-header p { color: var(--accent); }
+        .showcase { padding: 6rem 2rem; background: #f8fafc; }
         .showcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; max-width: 1200px; margin: 3rem auto 0; }
-        .app-screen { background: var(--dark); border-radius: 16px; overflow: hidden; border: 1px solid #334155; transition: 0.3s; }
-        .app-screen:hover { border-color: var(--primary); transform: translateY(-5px); }
-        .app-screen img { width: 100%; height: 220px; object-fit: cover; object-position: top; border-bottom: 1px solid #334155; }
+        .app-screen { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; transition: 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .app-screen:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .app-screen img { width: 100%; height: 220px; object-fit: cover; object-position: top; border-bottom: 1px solid #e2e8f0; }
         .screen-info { padding: 1.5rem; }
-        .screen-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: white; }
-        .screen-info p { font-size: 0.9rem; color: #94a3b8; }
+        .screen-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--dark); }
+        .screen-info p { font-size: 0.9rem; color: #64748b; }
+
+        /* --- SMART FAQ --- */
+        .faq-section { padding: 5rem 2rem; max-width: 800px; margin: 0 auto; }
+        details { background: #f8fafc; padding: 1.5rem; border-radius: 10px; margin-bottom: 1rem; cursor: pointer; border: 1px solid #e2e8f0; transition: 0.3s; }
+        details:hover { background: white; border-color: var(--primary); }
+        summary { font-weight: 600; font-size: 1.1rem; list-style: none; position: relative; padding-right: 20px; }
+        summary::after { content: '+'; position: absolute; right: 0; font-weight: bold; color: var(--primary); }
+        details[open] summary::after { content: '-'; }
+        details p { margin-top: 1rem; color: #475569; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
 
         /* --- ABOUT & CONTACT --- */
         .about-section { padding: 6rem 2rem; background: var(--white); }
@@ -120,7 +139,7 @@
         .float-wa:hover { transform: scale(1.1); }
     </style>
 </head>
-<body>
+<body class="fade-in-up">
 
     <header>
         <div class="nav-container">
@@ -129,7 +148,7 @@
             </div>
             <div class="nav-links">
                 <a href="#features">Features</a>
-                <a href="#showcase">Interface</a>
+                <a href="#demo">Demo</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
                 <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
@@ -145,15 +164,23 @@
         
         <div class="hero-buttons">
             <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
-                <i class="fa-solid fa-download"></i> Download for Windows
+                <i class="fa-solid fa-download"></i> Download v1.0
             </a>
-            <a href="http://www.youtube.com/@pulsestreamlive" target="_blank" class="btn btn-outline">
-                <i class="fa-brands fa-youtube"></i> Watch Demo
+            <a href="https://selar.com/64674n47qi" target="_blank" class="btn btn-selar">
+                <i class="fa-solid fa-credit-card"></i> Buy License
             </a>
         </div>
         
         <div class="system-req">
             <i class="fa-brands fa-windows"></i> Requires Windows 10 or 11 (64-bit)
+        </div>
+    </section>
+
+    <section id="demo" class="video-section">
+        <h2>See PulseStream in Action</h2>
+        <p style="color: #94a3b8; margin-top: 10px;">Watch Lwasa George demonstrate the workflow.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=0" title="PulseStream Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -196,14 +223,14 @@
                 <img src="images/login.png" alt="PulseStream Login">
                 <div class="screen-info">
                     <h3>Secure Login</h3>
-                    <p>Role-based access for Admins and Technicians. Secure encryption standard.</p>
+                    <p>Role-based access for Admins and Technicians with secure encryption.</p>
                 </div>
             </div>
             <div class="app-screen">
                 <img src="images/dashboard.png" alt="PulseStream Dashboard">
                 <div class="screen-info">
                     <h3>Financial Dashboard</h3>
-                    <p>Track Revenue (Cash/Insurance/Credit), Patient Inflow, and Lab performance live.</p>
+                    <p>Track Revenue (Cash/Insurance/Credit), Patient Inflow, and Lab performance.</p>
                 </div>
             </div>
             <div class="app-screen">
@@ -214,6 +241,30 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+        
+        <details>
+            <summary>Does this work without Internet?</summary>
+            <p>Yes! PulseStream is built for Africa. It works 100% offline. You only need internet briefly for sending email reports or activation.</p>
+        </details>
+
+        <details>
+            <summary>Is there a free trial?</summary>
+            <p>Yes. You get a 14-Day Free Trial with full access to register up to 50 patients.</p>
+        </details>
+
+        <details>
+            <summary>How do I pay for the license?</summary>
+            <p>We accept MTN and Airtel Mobile Money (Uganda), Card payments via Selar, and other arrangements for South Sudan.</p>
+        </details>
+        
+        <details>
+            <summary>Can I customize the Lab Form Logo?</summary>
+            <p>Absolutely. You can upload your own facility logo in the Settings menu, and it will appear on all patient reports.</p>
+        </details>
     </section>
 
     <section id="about" class="about-section">
@@ -257,7 +308,15 @@
                     <i class="fa-solid fa-shield-halved"></i>
                     <div>
                         <h3 style="margin:0;">Official Payment</h3>
-                        <span style="font-size:0.85rem; color:#64748b;">License Activation Accounts</span>
+                        <span style="font-size:0.85rem; color:#64748b;">Secure Activation Methods</span>
+                    </div>
+                </div>
+
+                <div class="payment-item">
+                    <div class="pay-icon" style="background: var(--selar);"> <i class="fa-solid fa-credit-card"></i> </div>
+                    <div>
+                        <strong>Instant Online Payment</strong><br>
+                        <a href="https://selar.com/64674n47qi" target="_blank" style="color:var(--selar); font-weight:bold;">Pay via Selar (Card/Momo) &rarr;</a>
                     </div>
                 </div>
 
