@@ -3,458 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PulseStream Lab App - Modern Laboratory Intelligence Built for Africa. Professional LIS software for clinics and hospitals.">
+    
+    <meta name="description" content="PulseStream Lab App - The Premium Desktop Laboratory Information System (LIS) for Africa. Offline-ready, Smart Diagnostics, and Financial Dashboards.">
+    <meta name="keywords" content="LIS Software, Medical Lab App, PulseStream, Lwasa George, African Health Tech, Offline Lab System, Medical Diagnostics">
     <meta name="author" content="Lwasa George">
-    <meta name="keywords" content="LIS, Laboratory Information System, Medical Lab Software, Africa Diagnostic Tool, Offline Lab App">
-    <title>PulseStream Lab App | Modern Laboratory Intelligence</title>
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="PulseStream Lab App | Smarter Labs. Faster Workflows.">
+    <meta property="og:description" content="Download the #1 Offline Laboratory System built for Africa. Managing 200+ tests, finances, and patient reports.">
+    <meta property="og:image" content="images/dashboard.png">
+    <meta property="og:url" content="https://lwasageorge.github.io/pulsestream-web/">
+
+    <title>PulseStream Lab App | Premium LIS for Africa</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            /* Brand Colors */
-            --primary: #0056D2;       /* PulseStream Royal Blue - Trust */
-            --primary-dark: #004494;  /* Darker Blue for hover */
-            --dark: #0f172a;          /* Slate dark - Professional Text */
-            --light: #f8fafc;         /* Clinical Light Grey Background */
+            --primary: #0056D2;       /* Royal Blue */
+            --primary-dark: #004494;  /* Deep Blue */
+            --accent: #0ea5e9;        /* Sky Blue */
+            --dark: #0f172a;          /* Slate Black */
+            --light: #f8fafc;         /* Medical White */
             --white: #ffffff;
-            
-            /* Status Colors */
-            --success: #10b981;       /* Medical Green - Safety/Approved */
-            --warning: #f59e0b;       /* Notice Orange */
+            --success: #25D366;       /* WhatsApp Green */
+            --youtube: #FF0000;       /* YouTube Red */
             --selar: #7C3AED;         /* Payment Purple */
-            
-            /* UI Elements */
-            --border: #e2e8f0;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
         }
 
-        /* --- GLOBAL SETTINGS --- */
+        /* --- GLOBAL RESET --- */
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            color: var(--dark); 
-            background-color: var(--white); 
-            line-height: 1.6; 
-            -webkit-font-smoothing: antialiased;
-        }
-        
-        a { text-decoration: none; transition: 0.3s ease; }
+        body { font-family: 'Inter', sans-serif; color: var(--dark); background-color: var(--white); line-height: 1.6; }
+        a { text-decoration: none; transition: 0.3s; }
         ul { list-style: none; }
         img { max-width: 100%; display: block; }
 
         /* --- ANIMATIONS --- */
-        .fade-in-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
-        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
-
-        /* --- TYPOGRAPHY --- */
-        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; color: var(--dark); }
-        .text-primary { color: var(--primary); }
-        .text-small { font-size: 0.875rem; color: #64748b; }
-        .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem auto; }
-        .section-header h2 { font-size: 2.25rem; margin-bottom: 1rem; }
-        .section-header p { font-size: 1.1rem; color: #475569; }
+        .fade-in { animation: fadeIn 1s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
         /* --- BUTTONS --- */
-        .btn { 
-            display: inline-flex; align-items: center; gap: 0.5rem; 
-            padding: 0.875rem 2rem; border-radius: 8px; 
-            font-weight: 600; font-size: 1rem; cursor: pointer; 
-            transition: all 0.2s ease; border: none; 
-        }
-        .btn-primary { background: var(--primary); color: white; box-shadow: var(--shadow); }
-        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
-        
-        .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
-        .btn-outline:hover { background: var(--primary); color: white; }
-        
-        .btn-selar { 
-            background: var(--selar); color: white; width: 100%; 
-            justify-content: center; margin-top: 1rem;
-        }
-        .btn-selar:hover { background: #6D28D9; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; border: none; font-size: 0.95rem; }
+        .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 15px rgba(0, 86, 210, 0.3); }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0, 86, 210, 0.4); }
+        .btn-selar { background: var(--selar); color: white; width: 100%; justify-content: center; }
+        .btn-selar:hover { background: #5b21b6; }
+        .btn-download { background: #334155; color: white; font-size: 0.85rem; padding: 0.5rem 1rem; }
+        .btn-download:hover { background: var(--primary); }
 
         /* --- NAVIGATION --- */
-        header { 
-            background: rgba(255, 255, 255, 0.95); 
-            backdrop-filter: blur(12px); 
-            position: fixed; width: 100%; top: 0; z-index: 1000; 
-            border-bottom: 1px solid var(--border);
-        }
-        .nav-container { 
-            max-width: 1280px; margin: 0 auto; padding: 1rem 2rem; 
-            display: flex; justify-content: space-between; align-items: center; 
-        }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; }
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0.8rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .nav-logo { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
+        .brand-name { font-size: 1.4rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+        
         .nav-links { display: flex; gap: 2rem; align-items: center; }
-        .nav-links a { color: #475569; font-weight: 500; font-size: 0.95rem; }
+        .nav-links a { color: var(--dark); font-weight: 500; font-size: 0.9rem; }
         .nav-links a:hover { color: var(--primary); }
 
-        /* --- HERO SECTION (VALUE BASED) --- */
-        .hero { 
-            padding: 180px 2rem 100px; 
-            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%); 
-            text-align: center; 
-        }
-        .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; }
-        .hero p { font-size: 1.25rem; color: #475569; max-width: 700px; margin: 0 auto 2.5rem; }
-        .hero-badges { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
-        .badge { background: #e0f2fe; color: var(--primary); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; }
+        /* --- HERO SECTION --- */
+        .hero { padding: 160px 2rem 100px; background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%); text-align: center; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -1px; }
+        .hero h1 span { color: var(--primary); }
+        .hero p { font-size: 1.2rem; color: #475569; max-width: 700px; margin: 0 auto 2.5rem; }
         
-        /* --- TRUST GRID (WHY PULSESTREAM) --- */
-        .features { padding: 6rem 2rem; background: var(--white); }
-        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1280px; margin: 0 auto; }
-        .feature-card { 
-            padding: 2rem; border-radius: 12px; background: var(--white); 
-            border: 1px solid var(--border); transition: 0.3s; 
-        }
-        .feature-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: var(--shadow-lg); }
-        .icon-box { 
-            width: 50px; height: 50px; background: #f0f9ff; border-radius: 8px; 
-            display: flex; align-items: center; justify-content: center; 
-            color: var(--primary); font-size: 1.5rem; margin-bottom: 1.5rem;
-        }
-
-        /* --- HOW IT WORKS (PROCESS) --- */
-        .process { padding: 6rem 2rem; background: var(--light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1280px; margin: 0 auto; }
-        .process-step { display: flex; gap: 1rem; align-items: flex-start; }
-        .step-number { 
-            font-size: 2rem; font-weight: 800; color: #cbd5e1; line-height: 1; 
-            min-width: 40px; 
-        }
-
-        /* --- APP SHOWCASE --- */
-        .showcase { padding: 6rem 2rem; background: var(--dark); color: white; }
-        .showcase h2 { color: white; }
-        .showcase p { color: #94a3b8; }
-        .showcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1280px; margin: 3rem auto 0; }
-        .app-screen { 
-            background: white; border-radius: 12px; overflow: hidden; 
-            border: 1px solid #334155; transition: 0.3s; 
-        }
-        .app-screen img { width: 100%; height: 220px; object-fit: cover; object-position: top; }
-        .screen-info { padding: 1.5rem; color: var(--dark); }
-
-        /* --- PRICING (PREMIUM & LEGAL) --- */
-        .pricing { padding: 6rem 2rem; background: var(--white); }
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1280px; margin: 0 auto; align-items: flex-start; }
-        .price-card { 
-            padding: 2.5rem; border: 1px solid var(--border); border-radius: 16px; 
-            background: var(--white); position: relative; 
-        }
-        .price-card.featured { 
-            border: 2px solid var(--primary); box-shadow: var(--shadow-lg); 
-            transform: scale(1.02); z-index: 2;
-        }
-        .plan-tag { 
-            position: absolute; top: -12px; left: 50%; transform: translateX(-50%); 
-            background: var(--primary); color: white; padding: 4px 12px; 
-            border-radius: 50px; font-size: 0.8rem; font-weight: 600; 
-        }
-        .price-header { margin-bottom: 2rem; text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
-        .price-features li { margin-bottom: 0.8rem; font-size: 0.95rem; display: flex; gap: 0.5rem; }
-        .price-features i { color: var(--success); }
-        .license-note { 
-            background: #f1f5f9; padding: 1rem; border-radius: 8px; 
-            font-size: 0.8rem; color: #64748b; margin-top: 2rem; text-align: center;
-        }
-
-        /* --- DISCLAIMER BOX --- */
-        .legal-box { 
-            max-width: 900px; margin: 4rem auto 0; padding: 2rem; 
-            background: #fffbeb; border: 1px solid #fcd34d; border-radius: 12px; 
-            color: #92400e; font-size: 0.9rem; text-align: center; 
-        }
-
-        /* --- ABOUT (INVESTOR GRADE) --- */
-        .about { padding: 6rem 2rem; background: var(--light); border-top: 1px solid var(--border); }
-        .about-container { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; }
-        .owner-img { width: 200px; height: 200px; border-radius: 50%; border: 4px solid var(--primary); object-fit: cover; }
+        .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
         
+        /* --- VIDEO GALLERY (TUTORIALS) --- */
+        .video-section { padding: 5rem 2rem; background: var(--dark); color: white; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .section-header p { color: #94a3b8; }
+        
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .video-card { background: #1e293b; border-radius: 12px; overflow: hidden; border: 1px solid #334155; transition: 0.3s; }
+        .video-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .video-info { padding: 1.5rem; }
+        .video-info h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: white; }
+
+        /* --- DOWNLOADS (JSON RESOURCES) --- */
+        .downloads { padding: 5rem 2rem; background: var(--light); }
+        .download-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .file-card { background: white; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center; transition: 0.3s; cursor: pointer; }
+        .file-card:hover { box-shadow: var(--shadow); border-color: var(--primary); transform: translateY(-3px); }
+        .file-icon { font-size: 2.5rem; color: #f59e0b; margin-bottom: 1rem; }
+        .file-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .file-card p { font-size: 0.85rem; color: #64748b; margin-bottom: 1.5rem; }
+
+        /* --- FEATURES --- */
+        .features { padding: 5rem 2rem; background: white; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .feature-card { padding: 2rem; border-radius: 16px; background: white; border: 1px solid #f1f5f9; text-align: center; transition: 0.3s; cursor: pointer; }
+        .feature-card:hover { box-shadow: var(--shadow); border-color: var(--primary); background: #f8fafc; }
+        .f-icon { width: 60px; height: 60px; background: #e0f2fe; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1.5rem; }
+
+        /* --- CONTACT & PAYMENT --- */
+        .contact { padding: 5rem 2rem; background: white; }
+        .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; max-width: 1100px; margin: 0 auto; }
+        
+        .profile-card { text-align: center; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 4px solid var(--primary); object-fit: cover; margin-bottom: 1.5rem; }
+        .social-row { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
+        .social-btn { width: 40px; height: 40px; border-radius: 50%; background: #f1f5f9; display: flex; align-items: center; justify-content: center; color: var(--dark); transition: 0.3s; }
+        .social-btn:hover { background: var(--primary); color: white; }
+
+        .payment-box { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); padding: 2.5rem; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: var(--shadow); }
+        .pay-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #e2e8f0; }
+        .pay-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.9rem; }
+
         /* --- FOOTER --- */
-        footer { background: var(--dark); color: #cbd5e1; padding: 4rem 2rem; font-size: 0.9rem; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; max-width: 1280px; margin: 0 auto; padding-bottom: 3rem; border-bottom: 1px solid #334155; }
-        .footer-col h4 { color: white; margin-bottom: 1.5rem; }
-        .footer-col ul li { margin-bottom: 0.8rem; }
-        .footer-col a { color: #94a3b8; }
-        .footer-col a:hover { color: white; }
-        .legal-text { text-align: center; margin-top: 2rem; font-size: 0.8rem; color: #64748b; }
-
+        footer { background: var(--dark); color: #94a3b8; padding: 3rem 2rem; text-align: center; font-size: 0.9rem; }
+        
         /* --- MOBILE --- */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } 
-            .process-grid, .pricing-grid { grid-template-columns: 1fr; }
-            .price-card.featured { transform: none; }
+            .nav-links { display: none; }
+            .contact-container { grid-template-columns: 1fr; }
         }
+        
+        /* --- FLOAT BUTTON --- */
+        .float-wa { position: fixed; bottom: 30px; right: 30px; background: var(--success); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 999; transition: 0.3s; }
+        .float-wa:hover { transform: scale(1.1); }
     </style>
 </head>
-<body class="fade-in-up">
+<body class="fade-in">
 
     <header>
         <div class="nav-container">
-            <div class="logo">
-                <i class="fa-solid fa-microscope"></i> PulseStream
+            <div class="brand">
+                <img src="images/logo.png" alt="PulseStream Logo" class="nav-logo">
+                <span class="brand-name">PulseStream</span>
             </div>
             <div class="nav-links">
-                <a href="#process">How it Works</a>
-                <a href="#pricing">Pricing & Licensing</a>
-                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#tutorials">Tutorials</a>
+                <a href="#downloads">Resources</a>
                 <a href="#contact">Contact</a>
                 <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
-                    Download App
+                    <i class="fa-brands fa-windows"></i> Download App
                 </a>
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-badges">
-            <span class="badge"><i class="fa-solid fa-check"></i> Offline-Ready</span>
-            <span class="badge"><i class="fa-solid fa-check"></i> Medically Certified Logic</span>
-            <span class="badge"><i class="fa-solid fa-check"></i> Secure Data</span>
-        </div>
-        <h1>Modern Laboratory Intelligence<br><span class="text-primary">Built for Africa</span></h1>
-        <p>Fast, accurate, and offline-ready laboratory workflow software designed for real clinical environments. Empowering professionals to operate with structure and confidence.</p>
+        <h1>Smart Diagnostics.<br><span>Fast Workflows.</span></h1>
+        <p>The premium Laboratory Information System (LIS) built for Africa. Offline-ready, accurate, and designed for clinics, hospitals, and diagnostic centers.</p>
         
-        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <div class="hero-buttons">
             <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
-                <i class="fa-brands fa-windows"></i> Download PulseStream
+                <i class="fa-solid fa-download"></i> Download for Windows
             </a>
-            <a href="#pricing" class="btn btn-outline">
-                View Access Plans
+            <a href="https://selar.com/64674n47qi" target="_blank" class="btn" style="background:#f3e8ff; color:var(--selar);">
+                <i class="fa-solid fa-credit-card"></i> Buy License
             </a>
         </div>
         
-        <div style="margin-top: 2rem; font-size: 0.85rem; color: #64748b;">
-            <i class="fa-solid fa-shield-halved"></i> Intended for Professional Laboratory Use Only
+        <p style="font-size: 0.9rem; color:#64748b;"><i class="fa-solid fa-shield-halved"></i> 100% Offline Capable • Windows 10/11</p>
+    </section>
+
+    <section id="tutorials" class="video-section">
+        <div class="section-header">
+            <h2>App Tutorials & Demos</h2>
+            <p>Watch how PulseStream transforms laboratory operations.</p>
+        </div>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/NO-Mj60sIQ0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info"><h3>Introduction to PulseStream</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/yO3ZRBVlNgI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info"><h3>Dashboard & Analytics</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/tl42BHHO7MA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info"><h3>Patient Registration</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/oxMJaE4eooY" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info"><h3>Smart Results Entry</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/bUM8w2SCfN4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info"><h3>Generating Reports</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/S1G_mTn8G04" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info"><h3>Full System Overview</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="downloads" class="downloads">
+        <div class="section-header">
+            <h2>System Resources</h2>
+            <p>Download essential configuration files for your PulseStream installation.</p>
+        </div>
+        <div class="download-grid">
+            <div class="file-card" onclick="window.location.href='json/test_catalog.json'">
+                <i class="fa-solid fa-file-code file-icon"></i>
+                <h3>Test Catalog (JSON)</h3>
+                <p>Pre-configured list of 200+ tests.</p>
+                <a href="json/test_catalog.json" download class="btn btn-download">Download File</a>
+            </div>
+            <div class="file-card" onclick="window.location.href='json/insurance_companies.json'">
+                <i class="fa-solid fa-building-shield file-icon"></i>
+                <h3>Insurance List (JSON)</h3>
+                <p>Database of African insurance providers.</p>
+                <a href="json/insurance_companies.json" download class="btn btn-download">Download File</a>
+            </div>
+            <div class="file-card" onclick="window.location.href='json/world_currencies.json'">
+                <i class="fa-solid fa-coins file-icon"></i>
+                <h3>Currencies (JSON)</h3>
+                <p>Global currency configurations.</p>
+                <a href="json/world_currencies.json" download class="btn btn-download">Download File</a>
+            </div>
         </div>
     </section>
 
     <section id="features" class="features">
         <div class="section-header">
             <h2>Why Choose PulseStream?</h2>
-            <p>Reliability | Accuracy | Speed | Professionalism</p>
         </div>
-        <div class="grid-4">
+        <div class="feature-grid">
             <div class="feature-card">
-                <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
-                <h3>Accelerated Workflows</h3>
-                <p class="text-small">Reduce manual repetition and shorten result turnaround time through structured digital workflows.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon-box"><i class="fa-solid fa-wifi"></i></div>
-                <h3>Offline Architecture</h3>
-                <p class="text-small">Works fully offline, ensuring uninterrupted operations in regions with unreliable connectivity.</p>
+                <div class="f-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Speed & Accuracy</h3>
+                <p>Reduce waiting times with smart templates.</p>
             </div>
             <div class="feature-card">
-                <div class="icon-box"><i class="fa-solid fa-user-doctor"></i></div>
-                <h3>Professionally Engineered</h3>
-                <p class="text-small">Designed by medical laboratory professionals who understand real-world diagnostic workflows.</p>
+                <div class="f-icon"><i class="fa-solid fa-wifi"></i></div>
+                <h3>Offline First</h3>
+                <p>Works perfectly without internet access.</p>
             </div>
             <div class="feature-card">
-                <div class="icon-box"><i class="fa-solid fa-file-contract"></i></div>
-                <h3>Standardized Reporting</h3>
-                <p class="text-small">Generate clean, branded, and clinically structured reports ready for printing or sharing.</p>
+                <div class="f-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <h3>Medically Certified</h3>
+                <p>Built by professionals for professionals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="f-icon"><i class="fa-solid fa-gem"></i></div>
+                <h3>Modern UI</h3>
+                <p>Clean, professional, and easy to use.</p>
             </div>
         </div>
     </section>
 
-    <section id="process" class="process">
-        <div class="section-header">
-            <h2>How PulseStream Works</h2>
-            <p>A structured, intuitive process designed for compliance.</p>
-        </div>
-        <div class="process-grid">
-            <div class="process-step">
-                <span class="step-number">01</span>
-                <div>
-                    <h4>Patient & Sample Entry</h4>
-                    <p class="text-small">Record patient and sample information using standardized digital forms to ensure data integrity.</p>
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="profile-card">
+                <img src="images/profile.png" alt="Lwasa George" class="profile-img">
+                <h3 style="font-size:1.8rem; margin-bottom:0.5rem;">Lwasa George</h3>
+                <p style="color:var(--primary); font-weight:600; margin-bottom:1rem;">Medical Laboratory Technician</p>
+                <p style="color:#64748b;">Founder of PulseStream Lab App & PulseStreamLive.</p>
+                
+                <div class="social-row">
+                    <a href="http://www.youtube.com/@pulsestreamlive" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@pulsestreamlive11" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/16P8hT3bdf" class="social-btn"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/256700677555" class="social-btn" style="background:var(--success); color:white;"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-            </div>
-            <div class="process-step">
-                <span class="step-number">02</span>
-                <div>
-                    <h4>Test Selection & Result</h4>
-                    <p class="text-small">Select tests from the library. Enter results manually using validated reference ranges.</p>
-                </div>
-            </div>
-            <div class="process-step">
-                <span class="step-number">03</span>
-                <div>
-                    <h4>Secure Reporting</h4>
-                    <p class="text-small">Generate reports locally. Data is securely stored on the device, ensuring privacy.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="showcase">
-        <div class="section-header">
-            <h2>Professional Interface</h2>
-            <p>Clean design that reduces fatigue and supports long working hours.</p>
-        </div>
-        <div class="showcase-grid">
-            <div class="app-screen">
-                <img src="images/login.png" alt="Secure Login">
-                <div class="screen-info">
-                    <h4>Secure Access Control</h4>
-                    <p class="text-small">Role-based login for Admins and Technicians.</p>
-                </div>
-            </div>
-            <div class="app-screen">
-                <img src="images/dashboard.png" alt="Financial Dashboard">
-                <div class="screen-info">
-                    <h4>Operational Dashboard</h4>
-                    <p class="text-small">Real-time view of patient inflow and revenue.</p>
-                </div>
-            </div>
-            <div class="app-screen">
-                <img src="images/results.png" alt="Results Entry">
-                <div class="screen-info">
-                    <h4>Smart Results Entry</h4>
-                    <p class="text-small">Pre-configured templates for 200+ tests.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="pricing">
-        <div class="section-header">
-            <h2>Transparent Access Plans</h2>
-            <p>Choose a license that fits your laboratory's workflow.</p>
-        </div>
-        
-        <div class="pricing-grid">
-            <div class="price-card">
-                <div class="price-header">
-                    <h3>Basic Access</h3>
-                    <p class="text-small">For small clinics & startups.</p>
-                </div>
-                <ul class="price-features">
-                    <li><i class="fa-solid fa-check"></i> Core workflow tools</li>
-                    <li><i class="fa-solid fa-check"></i> Manual result entry</li>
-                    <li><i class="fa-solid fa-check"></i> Standard reference ranges</li>
-                    <li><i class="fa-solid fa-check"></i> Local data storage</li>
-                    <li><i class="fa-solid fa-check"></i> Single device license</li>
-                </ul>
-                <div class="license-note">
-                    <strong>License Note:</strong> Intended for professional laboratory use. No automated interpretation provided.
-                </div>
-                <a href="https://selar.com/64674n47qi" target="_blank" class="btn btn-selar">Get Basic License</a>
             </div>
 
-            <div class="price-card featured">
-                <span class="plan-tag">MOST POPULAR</span>
-                <div class="price-header">
-                    <h3>Professional</h3>
-                    <p class="text-small">For growing laboratories.</p>
-                </div>
-                <ul class="price-features">
-                    <li><i class="fa-solid fa-check"></i> <strong>Everything in Basic</strong></li>
-                    <li><i class="fa-solid fa-check"></i> Expanded test library</li>
-                    <li><i class="fa-solid fa-check"></i> Branded PDF reports</li>
-                    <li><i class="fa-solid fa-check"></i> Advanced reference values</li>
-                    <li><i class="fa-solid fa-check"></i> Multi-device (Same location)</li>
-                </ul>
-                <div class="license-note">
-                    <strong>Operational Benefit:</strong> Improved reporting consistency and reduced entry time.
-                </div>
-                <a href="https://selar.com/64674n47qi" target="_blank" class="btn btn-selar">Get Professional License</a>
-            </div>
-
-            <div class="price-card">
-                <div class="price-header">
-                    <h3>Enterprise</h3>
-                    <p class="text-small">For hospitals & high-volume.</p>
-                </div>
-                <ul class="price-features">
-                    <li><i class="fa-solid fa-check"></i> <strong>All Professional features</strong></li>
-                    <li><i class="fa-solid fa-check"></i> Multi-user role management</li>
-                    <li><i class="fa-solid fa-check"></i> Secure backup options</li>
-                    <li><i class="fa-solid fa-check"></i> Custom workflow config</li>
-                    <li><i class="fa-solid fa-check"></i> Dedicated support channel</li>
-                </ul>
-                <div class="license-note">
-                    <strong>License Note:</strong> Institutional license agreement with deployment support.
-                </div>
-                <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:1rem;">Contact Sales</a>
-            </div>
-        </div>
-
-        <div class="legal-box">
-            <h4 style="margin-bottom: 1rem;"><i class="fa-solid fa-circle-exclamation"></i> Important Payment & Medical Notice</h4>
-            <p style="margin-bottom: 1rem;">
-                <strong>Accepted Methods:</strong> Mobile Money (MTN, Airtel) via Selar. <br>
-                All payments are strictly for <strong>software access licensing only</strong>.
-            </p>
-            <p style="font-size: 0.85rem;">
-                PulseStream Lab App is a laboratory workflow assistance tool. It does not provide medical diagnoses, treatment recommendations, or clinical decisions. All results must be reviewed and validated by a qualified medical professional.
-            </p>
-        </div>
-    </section>
-
-    <section class="process" style="text-align:center;">
-        <div class="section-header">
-            <h2>See PulseStream in Action</h2>
-        </div>
-        <div style="max-width:800px; margin:0 auto; border-radius:12px; overflow:hidden; box-shadow:var(--shadow-lg);">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="PulseStream Demo" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="images/profile.png" alt="Lwasa George" class="owner-img">
             <div>
-                <h2>Lwasa George</h2>
-                <p class="text-primary" style="font-weight:600; margin-bottom:1rem;">Founder & Product Owner | Medical Laboratory Technician</p>
-                <p style="margin-bottom:1.5rem; color:#475569;">
-                    PulseStream was created to address a critical gap in African laboratory operations: the need for reliable, offline-ready workflow software.
-                    Guided by the principle that technology should empower professionals, not replace them, we are building the future of diagnostic efficiency.
-                </p>
-                <div style="display:flex; gap:1rem;">
-                    <a href="http://www.youtube.com/@pulsestreamlive" class="text-primary"><i class="fa-brands fa-youtube fa-2x"></i></a>
-                    <a href="https://www.tiktok.com/@pulsestreamlive11" class="text-dark"><i class="fa-brands fa-tiktok fa-2x"></i></a>
-                    <a href="https://wa.me/256700677555" class="text-success"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <h3 style="font-size:1.5rem; margin-bottom:1.5rem; border-bottom:2px solid var(--primary); display:inline-block;">Contact & Support</h3>
+                <ul style="margin-bottom:2rem;">
+                    <li style="margin-bottom:1rem;"><i class="fa-solid fa-envelope" style="color:var(--primary); width:25px;"></i> lwasageorge60@gmail.com</li>
+                    <li style="margin-bottom:1rem;"><i class="fa-solid fa-envelope" style="color:var(--primary); width:25px;"></i> pulsestreamlive@gmail.com</li>
+                    <li style="margin-bottom:1rem;"><i class="fa-solid fa-phone" style="color:var(--primary); width:25px;"></i> +256 700 677 555 (UG)</li>
+                    <li style="margin-bottom:1rem;"><i class="fa-solid fa-phone" style="color:var(--primary); width:25px;"></i> +211 920 677 555 (SSD)</li>
+                </ul>
+
+                <div class="payment-box">
+                    <h3 style="margin-bottom:1.5rem;">Official Payment</h3>
+                    
+                    <div class="pay-row">
+                        <div class="pay-icon" style="background:#fbbf24;">MTN</div>
+                        <div>
+                            <strong>Mobile Money</strong><br>
+                            <span style="font-size:0.9rem;">0761 174 741 (Lwasa George)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pay-row">
+                        <div class="pay-icon" style="background:#ef4444;">AIR</div>
+                        <div>
+                            <strong>Airtel Money</strong><br>
+                            <span style="font-size:0.9rem;">0700 677 555 (Lwasa George)</span>
+                        </div>
+                    </div>
+
+                    <a href="https://selar.com/64674n47qi" target="_blank" class="btn btn-selar">
+                        <i class="fa-solid fa-lock"></i> Secure Payment via Selar
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>PulseStream</h4>
-                <p>Modern Laboratory Intelligence Built for Africa.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Contact Support</h4>
-                <ul>
-                    <li><i class="fa-solid fa-envelope"></i> lwasageorge60@gmail.com</li>
-                    <li><i class="fa-solid fa-phone"></i> +256 700 677 555 (UG)</li>
-                    <li><i class="fa-solid fa-phone"></i> +211 920 677 555 (SSD)</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Legal & Safety</h4>
-                <ul>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Regulatory Notice</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="legal-text">
-            <p><strong>Regulatory Compliance:</strong> Users are solely responsible for ensuring compliance with local, national, and institutional laboratory regulations.</p>
-            <p style="margin-top:1rem;">&copy; 2026 PulseStream Lab App. Developed by Lwasa George. All Rights Reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 PulseStream Lab App. Developed by Lwasa George. All Rights Reserved.</p>
+        <p style="margin-top:0.5rem; font-size:0.8rem; color:#64748b;">Kampala, Uganda | Juba, South Sudan</p>
     </footer>
+
+    <a href="https://wa.me/256700677555" class="float-wa" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
