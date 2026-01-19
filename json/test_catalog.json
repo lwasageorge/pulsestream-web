@@ -1,0 +1,1801 @@
+﻿{
+  "test_catalog": [
+    {
+      "id": 1,
+      "test_name": "Complete Blood Count (CBC)",
+      "test_category": "Hematology",
+      "price_ugx": 25000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"parameter": "WBC", "unit": "x10³/µL", "normal_range": "4.0-11.0"},
+        {"parameter": "RBC", "unit": "x10⁶/µL", "normal_range": "4.5-6.0"},
+        {"parameter": "Hemoglobin", "unit": "g/dL", "normal_range": "13.5-17.5"},
+        {"parameter": "Hematocrit", "unit": "%", "normal_range": "40-52"},
+        {"parameter": "MCV", "unit": "fL", "normal_range": "80-100"},
+        {"parameter": "MCH", "unit": "pg", "normal_range": "27-34"},
+        {"parameter": "MCHC", "unit": "g/dL", "normal_range": "32-36"},
+        {"parameter": "Platelets", "unit": "x10³/µL", "normal_range": "150-450"},
+        {"parameter": "Neutrophils", "unit": "%", "normal_range": "40-75"},
+        {"parameter": "Lymphocytes", "unit": "%", "normal_range": "20-45"}
+      ]
+    },
+    {
+      "id": 2,
+      "test_name": "Urinalysis",
+      "test_category": "Urine",
+      "price_ugx": 15000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"parameter": "Color", "normal_range": "Yellow"},
+        {"parameter": "Appearance", "normal_range": "Clear"},
+        {"parameter": "Specific Gravity", "normal_range": "1.005-1.030"},
+        {"parameter": "pH", "normal_range": "4.5-8.0"},
+        {"parameter": "Protein", "normal_range": "Negative"},
+        {"parameter": "Glucose", "normal_range": "Negative"},
+        {"parameter": "Ketones", "normal_range": "Negative"},
+        {"parameter": "Blood", "normal_range": "Negative"},
+        {"parameter": "Leukocytes", "normal_range": "Negative"},
+        {"parameter": "Nitrites", "normal_range": "Negative"},
+        {"parameter": "Epithelial Cells", "normal_range": "0-5/HPF"},
+        {"parameter": "Casts", "normal_range": "None"},
+        {"parameter": "Crystals", "normal_range": "None"}
+      ]
+    },
+    {
+      "id": 3,
+      "test_name": "Semen Analysis",
+      "test_category": "Fertility",
+      "price_ugx": 35000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"parameter": "Volume", "unit": "mL", "normal_range": "1.5-5.0"},
+        {"parameter": "Color", "normal_range": "Gray-white"},
+        {"parameter": "Liquefaction Time", "unit": "minutes", "normal_range": "<60"},
+        {"parameter": "pH", "normal_range": "7.2-8.0"},
+        {"parameter": "Sperm Count", "unit": "million/mL", "normal_range": ">15"},
+        {"parameter": "Total Motility", "unit": "%", "normal_range": ">40"},
+        {"parameter": "Progressive Motility", "unit": "%", "normal_range": ">32"},
+        {"parameter": "Normal Morphology", "unit": "%", "normal_range": ">4"},
+        {"parameter": "Vitality", "unit": "%", "normal_range": ">58"},
+        {"parameter": "White Blood Cells", "unit": "million/mL", "normal_range": "<1"}
+      ]
+    },
+    {
+      "id": 4,
+      "test_name": "Blood Slide for Malaria Parasites",
+      "test_category": "Parasitology",
+      "price_ugx": 10000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Scanty", "Moderate", "Heavy"]
+    },
+    {
+      "id": 5,
+      "test_name": "HIV Rapid Test",
+      "test_category": "Serology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Reactive", "Non-reactive", "Indeterminate"]
+    },
+    {
+      "id": 6,
+      "test_name": "HBsAg",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Indeterminate"]
+    },
+    {
+      "id": 7,
+      "test_name": "HCV Antibody",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Reactive", "Non-reactive", "Indeterminate"]
+    },
+    {
+      "id": 8,
+      "test_name": "VDRL/RPR",
+      "test_category": "Serology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Reactive", "Non-reactive", "Weakly reactive"]
+    },
+    {
+      "id": 9,
+      "test_name": "Random Blood Sugar (RBS)",
+      "test_category": "Chemistry",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "3.9-7.8"
+    },
+    {
+      "id": 10,
+      "test_name": "Hemoglobin (Hb)",
+      "test_category": "Hematology",
+      "price_ugx": 8000,
+      "results_format": "NUMERIC",
+      "unit": "g/dL",
+      "normal_range": "13.5-17.5"
+    },
+    {
+      "id": 11,
+      "test_name": "Erythrocyte Sedimentation Rate (ESR)",
+      "test_category": "Hematology",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "mm/hr",
+      "normal_range": "0-20"
+    },
+    {
+      "id": 12,
+      "test_name": "Widal Test",
+      "test_category": "Serology",
+      "price_ugx": 18000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"antigen": "Salmonella Typhi O", "titers": ["1:20", "1:40", "1:80", "1:160", "1:320", "1:640"]},
+        {"antigen": "Salmonella Typhi H", "titers": ["1:20", "1:40", "1:80", "1:160", "1:320", "1:640"]},
+        {"antigen": "Salmonella Paratyphi A", "titers": ["1:20", "1:40", "1:80", "1:160", "1:320"]},
+        {"antigen": "Salmonella Paratyphi B", "titers": ["1:20", "1:40", "1:80", "1:160", "1:320"]}
+      ]
+    },
+    {
+      "id": 13,
+      "test_name": "Brucella Test",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"antigen": "Brucella abortus (A)", "titers": ["1:20", "1:40", "1:80", "1:160", "1:320"]},
+        {"antigen": "Brucella melitensis (M)", "titers": ["1:20", "1:40", "1:80", "1:160", "1:320"]}
+      ]
+    },
+    {
+      "id": 14,
+      "test_name": "Thin Blood Film Comment",
+      "test_category": "Hematology",
+      "price_ugx": 15000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 15,
+      "test_name": "Fasting Blood Sugar (FBS)",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "3.9-5.6"
+    },
+    {
+      "id": 16,
+      "test_name": "Postprandial Blood Sugar (PPBS)",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "<7.8"
+    },
+    {
+      "id": 17,
+      "test_name": "Oral Glucose Tolerance Test (OGTT)",
+      "test_category": "Chemistry",
+      "price_ugx": 25000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"time": "Fasting", "unit": "mmol/L", "normal_range": "3.9-5.6"},
+        {"time": "30 minutes", "unit": "mmol/L", "normal_range": "<10.0"},
+        {"time": "60 minutes", "unit": "mmol/L", "normal_range": "<10.0"},
+        {"time": "90 minutes", "unit": "mmol/L", "normal_range": "<8.9"},
+        {"time": "120 minutes", "unit": "mmol/L", "normal_range": "<7.8"}
+      ]
+    },
+    {
+      "id": 18,
+      "test_name": "HbA1c (Glycated Hemoglobin)",
+      "test_category": "Chemistry",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "%",
+      "normal_range": "4.0-5.6"
+    },
+    {
+      "id": 19,
+      "test_name": "Urea",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "2.5-7.1"
+    },
+    {
+      "id": 20,
+      "test_name": "Creatinine",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "53-115"
+    },
+    {
+      "id": 21,
+      "test_name": "Uric Acid",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "150-450"
+    },
+    {
+      "id": 22,
+      "test_name": "Sodium (Na)",
+      "test_category": "Electrolytes",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "135-145"
+    },
+    {
+      "id": 23,
+      "test_name": "Potassium (K)",
+      "test_category": "Electrolytes",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "3.5-5.1"
+    },
+    {
+      "id": 24,
+      "test_name": "Chloride (Cl)",
+      "test_category": "Electrolytes",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "98-107"
+    },
+    {
+      "id": 25,
+      "test_name": "Bicarbonate (HCO3)",
+      "test_category": "Electrolytes",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "22-29"
+    },
+    {
+      "id": 26,
+      "test_name": "Total Protein",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "g/L",
+      "normal_range": "60-80"
+    },
+    {
+      "id": 27,
+      "test_name": "Albumin",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "g/L",
+      "normal_range": "35-50"
+    },
+    {
+      "id": 28,
+      "test_name": "Globulin",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "g/L",
+      "normal_range": "20-35"
+    },
+    {
+      "id": 29,
+      "test_name": "A/G Ratio",
+      "test_category": "Chemistry",
+      "price_ugx": 5000,
+      "results_format": "NUMERIC",
+      "unit": "ratio",
+      "normal_range": "1.0-2.0"
+    },
+    {
+      "id": 30,
+      "test_name": "Total Bilirubin",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "3-21"
+    },
+    {
+      "id": 31,
+      "test_name": "Direct Bilirubin",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "0-5"
+    },
+    {
+      "id": 32,
+      "test_name": "Indirect Bilirubin",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "3-16"
+    },
+    {
+      "id": 33,
+      "test_name": "ALT (SGPT)",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "7-56"
+    },
+    {
+      "id": 34,
+      "test_name": "AST (SGOT)",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "5-40"
+    },
+    {
+      "id": 35,
+      "test_name": "Alkaline Phosphatase (ALP)",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "40-150"
+    },
+    {
+      "id": 36,
+      "test_name": "GGT",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "8-61"
+    },
+    {
+      "id": 37,
+      "test_name": "LDH",
+      "test_category": "Chemistry",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "125-220"
+    },
+    {
+      "id": 38,
+      "test_name": "Amylase",
+      "test_category": "Chemistry",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "30-110"
+    },
+    {
+      "id": 39,
+      "test_name": "Lipase",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "U/L",
+      "normal_range": "13-60"
+    },
+    {
+      "id": 40,
+      "test_name": "Total Cholesterol",
+      "test_category": "Lipid Profile",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "<5.2"
+    },
+    {
+      "id": 41,
+      "test_name": "Triglycerides",
+      "test_category": "Lipid Profile",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "<1.7"
+    },
+    {
+      "id": 42,
+      "test_name": "HDL Cholesterol",
+      "test_category": "Lipid Profile",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": ">1.0"
+    },
+    {
+      "id": 43,
+      "test_name": "LDL Cholesterol",
+      "test_category": "Lipid Profile",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "<2.6"
+    },
+    {
+      "id": 44,
+      "test_name": "VLDL Cholesterol",
+      "test_category": "Lipid Profile",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "0.2-1.0"
+    },
+    {
+      "id": 45,
+      "test_name": "Calcium (Ca)",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "2.12-2.62"
+    },
+    {
+      "id": 46,
+      "test_name": "Phosphorus (P)",
+      "test_category": "Chemistry",
+      "price_ugx": 12000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "0.81-1.45"
+    },
+    {
+      "id": 47,
+      "test_name": "Magnesium (Mg)",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "0.7-1.0"
+    },
+    {
+      "id": 48,
+      "test_name": "Iron (Fe)",
+      "test_category": "Chemistry",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "9-30"
+    },
+    {
+      "id": 49,
+      "test_name": "TIBC",
+      "test_category": "Chemistry",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "45-82"
+    },
+    {
+      "id": 50,
+      "test_name": "Transferrin Saturation",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "NUMERIC",
+      "unit": "%",
+      "normal_range": "20-50"
+    },
+    {
+      "id": 51,
+      "test_name": "Ferritin",
+      "test_category": "Chemistry",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "µg/L",
+      "normal_range": "30-400"
+    },
+    {
+      "id": 52,
+      "test_name": "Vitamin B12",
+      "test_category": "Chemistry",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "pg/mL",
+      "normal_range": "200-900"
+    },
+    {
+      "id": 53,
+      "test_name": "Folate",
+      "test_category": "Chemistry",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "3.0-17.0"
+    },
+    {
+      "id": 54,
+      "test_name": "Vitamin D (25-OH)",
+      "test_category": "Chemistry",
+      "price_ugx": 45000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "30-100"
+    },
+    {
+      "id": 55,
+      "test_name": "CRP (C-Reactive Protein)",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "<5.0"
+    },
+    {
+      "id": 56,
+      "test_name": "RF (Rheumatoid Factor)",
+      "test_category": "Immunology",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "IU/mL",
+      "normal_range": "<20"
+    },
+    {
+      "id": 57,
+      "test_name": "ASO Titre",
+      "test_category": "Immunology",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "IU/mL",
+      "normal_range": "<200"
+    },
+    {
+      "id": 58,
+      "test_name": "PSA Total",
+      "test_category": "Tumor Markers",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "<4.0"
+    },
+    {
+      "id": 59,
+      "test_name": "PSA Free",
+      "test_category": "Tumor Markers",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "0.2-5.0"
+    },
+    {
+      "id": 60,
+      "test_name": "CEA",
+      "test_category": "Tumor Markers",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "<5.0"
+    },
+    {
+      "id": 61,
+      "test_name": "CA 125",
+      "test_category": "Tumor Markers",
+      "price_ugx": 45000,
+      "results_format": "NUMERIC",
+      "unit": "U/mL",
+      "normal_range": "<35"
+    },
+    {
+      "id": 62,
+      "test_name": "CA 19-9",
+      "test_category": "Tumor Markers",
+      "price_ugx": 45000,
+      "results_format": "NUMERIC",
+      "unit": "U/mL",
+      "normal_range": "<37"
+    },
+    {
+      "id": 63,
+      "test_name": "AFP",
+      "test_category": "Tumor Markers",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "<10"
+    },
+    {
+      "id": 64,
+      "test_name": "Beta HCG",
+      "test_category": "Hormones",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mIU/mL",
+      "normal_range": "<5 (non-pregnant)"
+    },
+    {
+      "id": 65,
+      "test_name": "TSH",
+      "test_category": "Hormones",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "µIU/mL",
+      "normal_range": "0.4-4.0"
+    },
+    {
+      "id": 66,
+      "test_name": "Free T4",
+      "test_category": "Hormones",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "pmol/L",
+      "normal_range": "9-23"
+    },
+    {
+      "id": 67,
+      "test_name": "Free T3",
+      "test_category": "Hormones",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "pmol/L",
+      "normal_range": "3.5-6.5"
+    },
+    {
+      "id": 68,
+      "test_name": "Cortisol (AM)",
+      "test_category": "Hormones",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "nmol/L",
+      "normal_range": "138-690"
+    },
+    {
+      "id": 69,
+      "test_name": "Prolactin",
+      "test_category": "Hormones",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "2-18"
+    },
+    {
+      "id": 70,
+      "test_name": "Testosterone",
+      "test_category": "Hormones",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "ng/dL",
+      "normal_range": "300-1000"
+    },
+    {
+      "id": 71,
+      "test_name": "Estradiol",
+      "test_category": "Hormones",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "pg/mL",
+      "normal_range": "15-350"
+    },
+    {
+      "id": 72,
+      "test_name": "Progesterone",
+      "test_category": "Hormones",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "Varies with cycle"
+    },
+    {
+      "id": 73,
+      "test_name": "FSH",
+      "test_category": "Hormones",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "mIU/mL",
+      "normal_range": "Varies with cycle"
+    },
+    {
+      "id": 74,
+      "test_name": "LH",
+      "test_category": "Hormones",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "mIU/mL",
+      "normal_range": "Varies with cycle"
+    },
+    {
+      "id": 75,
+      "test_name": "DHEA-S",
+      "test_category": "Hormones",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "µg/dL",
+      "normal_range": "80-560"
+    },
+    {
+      "id": 76,
+      "test_name": "Insulin",
+      "test_category": "Hormones",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "µIU/mL",
+      "normal_range": "2.6-24.9"
+    },
+    {
+      "id": 77,
+      "test_name": "Blood Group & Rh",
+      "test_category": "Blood Bank",
+      "price_ugx": 10000,
+      "results_format": "TEXT",
+      "options": ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"]
+    },
+    {
+      "id": 78,
+      "test_name": "Direct Coombs Test",
+      "test_category": "Blood Bank",
+      "price_ugx": 18000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 79,
+      "test_name": "Indirect Coombs Test",
+      "test_category": "Blood Bank",
+      "price_ugx": 18000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 80,
+      "test_name": "Crossmatch",
+      "test_category": "Blood Bank",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Compatible", "Incompatible"]
+    },
+    {
+      "id": 81,
+      "test_name": "Peripheral Blood Film",
+      "test_category": "Hematology",
+      "price_ugx": 20000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 82,
+      "test_name": "Reticulocyte Count",
+      "test_category": "Hematology",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "%",
+      "normal_range": "0.5-2.5"
+    },
+    {
+      "id": 83,
+      "test_name": "G6PD Screening",
+      "test_category": "Hematology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Normal", "Deficient", "Borderline"]
+    },
+    {
+      "id": 84,
+      "test_name": "Sickle Cell Test",
+      "test_category": "Hematology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Trait"]
+    },
+    {
+      "id": 85,
+      "test_name": "Hemoglobin Electrophoresis",
+      "test_category": "Hematology",
+      "price_ugx": 35000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"hemoglobin": "Hb A", "normal_range": "95-98%"},
+        {"hemoglobin": "Hb A2", "normal_range": "1.5-3.5%"},
+        {"hemoglobin": "Hb F", "normal_range": "<1%"},
+        {"hemoglobin": "Hb S", "normal_range": "0%"},
+        {"hemoglobin": "Hb C", "normal_range": "0%"}
+      ]
+    },
+    {
+      "id": 86,
+      "test_name": "Bleeding Time",
+      "test_category": "Coagulation",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "minutes",
+      "normal_range": "2-9"
+    },
+    {
+      "id": 87,
+      "test_name": "Clotting Time",
+      "test_category": "Coagulation",
+      "price_ugx": 10000,
+      "results_format": "NUMERIC",
+      "unit": "minutes",
+      "normal_range": "5-15"
+    },
+    {
+      "id": 88,
+      "test_name": "PT (Prothrombin Time)",
+      "test_category": "Coagulation",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "seconds",
+      "normal_range": "11-16"
+    },
+    {
+      "id": 89,
+      "test_name": "INR",
+      "test_category": "Coagulation",
+      "price_ugx": 5000,
+      "results_format": "NUMERIC",
+      "unit": "ratio",
+      "normal_range": "0.8-1.2"
+    },
+    {
+      "id": 90,
+      "test_name": "APTT",
+      "test_category": "Coagulation",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "seconds",
+      "normal_range": "25-35"
+    },
+    {
+      "id": 91,
+      "test_name": "D-Dimer",
+      "test_category": "Coagulation",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "µg/mL",
+      "normal_range": "<0.5"
+    },
+    {
+      "id": 92,
+      "test_name": "Fibrinogen",
+      "test_category": "Coagulation",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "g/L",
+      "normal_range": "1.8-3.5"
+    },
+    {
+      "id": 93,
+      "test_name": "Stool Analysis",
+      "test_category": "Microbiology",
+      "price_ugx": 15000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"parameter": "Color", "normal_range": "Brown"},
+        {"parameter": "Consistency", "normal_range": "Formed"},
+        {"parameter": "Mucus", "normal_range": "Absent"},
+        {"parameter": "Blood", "normal_range": "Absent"},
+        {"parameter": "Occult Blood", "normal_range": "Negative"},
+        {"parameter": "Reducing Substances", "normal_range": "Negative"},
+        {"parameter": "pH", "normal_range": "6.0-7.5"},
+        {"parameter": "WBC", "normal_range": "0-2/HPF"},
+        {"parameter": "RBC", "normal_range": "None"},
+        {"parameter": "Ova/Cysts", "normal_range": "None"},
+        {"parameter": "Fat Globules", "normal_range": "None"},
+        {"parameter": "Undigested Food", "normal_range": "None"}
+      ]
+    },
+    {
+      "id": 94,
+      "test_name": "Stool Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 30000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 95,
+      "test_name": "Urine Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 96,
+      "test_name": "Sputum AFB",
+      "test_category": "Microbiology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Scanty", "1+", "2+", "3+"]
+    },
+    {
+      "id": 97,
+      "test_name": "Sputum Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 30000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 98,
+      "test_name": "Gram Stain",
+      "test_category": "Microbiology",
+      "price_ugx": 15000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 99,
+      "test_name": "CSF Analysis",
+      "test_category": "Body Fluids",
+      "price_ugx": 25000,
+      "results_format": "TABLE",
+      "parameters": [
+        {"parameter": "Color", "normal_range": "Colorless"},
+        {"parameter": "Appearance", "normal_range": "Clear"},
+        {"parameter": "Pressure", "unit": "mm H2O", "normal_range": "70-180"},
+        {"parameter": "Protein", "unit": "mg/dL", "normal_range": "15-45"},
+        {"parameter": "Glucose", "unit": "mg/dL", "normal_range": "50-80"},
+        {"parameter": "Chloride", "unit": "mmol/L", "normal_range": "118-132"},
+        {"parameter": "WBC", "unit": "cells/µL", "normal_range": "0-5"},
+        {"parameter": "RBC", "unit": "cells/µL", "normal_range": "0"},
+        {"parameter": "Differential", "normal_range": "Lymphocytes predominate"}
+      ]
+    },
+    {
+      "id": 100,
+      "test_name": "Pleural Fluid Analysis",
+      "test_category": "Body Fluids",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 101,
+      "test_name": "Ascitic Fluid Analysis",
+      "test_category": "Body Fluids",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 102,
+      "test_name": "Synovial Fluid Analysis",
+      "test_category": "Body Fluids",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 103,
+      "test_name": "Pericardial Fluid Analysis",
+      "test_category": "Body Fluids",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 104,
+      "test_name": "Peritoneal Fluid Analysis",
+      "test_category": "Body Fluids",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 105,
+      "test_name": "Microfilaria",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 106,
+      "test_name": "Trypanosoma",
+      "test_category": "Parasitology",
+      "price_ugx": 18000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 107,
+      "test_name": "Leishmania",
+      "test_category": "Parasitology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 108,
+      "test_name": "Schistosoma",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 109,
+      "test_name": "Strongyloides",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 110,
+      "test_name": "Hookworm",
+      "test_category": "Parasitology",
+      "price_ugx": 12000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 111,
+      "test_name": "Roundworm",
+      "test_category": "Parasitology",
+      "price_ugx": 12000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 112,
+      "test_name": "Whipworm",
+      "test_category": "Parasitology",
+      "price_ugx": 12000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 113,
+      "test_name": "Tapeworm",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 114,
+      "test_name": "Giardia",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 115,
+      "test_name": "Entamoeba histolytica",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 116,
+      "test_name": "Cryptosporidium",
+      "test_category": "Parasitology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 117,
+      "test_name": "Malaria Antigen (RDT)",
+      "test_category": "Parasitology",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Invalid"]
+    },
+    {
+      "id": 118,
+      "test_name": "Dengue NS1 Antigen",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 119,
+      "test_name": "Dengue IgG/IgM",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Indeterminate"]
+    },
+    {
+      "id": 120,
+      "test_name": "Chikungunya IgM",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 121,
+      "test_name": "Yellow Fever Antibody",
+      "test_category": "Serology",
+      "price_ugx": 30000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 122,
+      "test_name": "Zika Virus IgM",
+      "test_category": "Serology",
+      "price_ugx": 35000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 123,
+      "test_name": "West Nile Virus IgM",
+      "test_category": "Serology",
+      "price_ugx": 35000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 124,
+      "test_name": "EBV VCA IgM",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 125,
+      "test_name": "EBV VCA IgG",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 126,
+      "test_name": "CMV IgM",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 127,
+      "test_name": "CMV IgG",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 128,
+      "test_name": "Rubella IgG",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Immune", "Non-immune"]
+    },
+    {
+      "id": 129,
+      "test_name": "Rubella IgM",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 130,
+      "test_name": "Toxoplasma IgG",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 131,
+      "test_name": "Toxoplasma IgM",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 132,
+      "test_name": "Syphilis TPHA",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 133,
+      "test_name": "Syphilis FTA-ABS",
+      "test_category": "Serology",
+      "price_ugx": 30000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 134,
+      "test_name": "Herpes Simplex 1 IgG",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 135,
+      "test_name": "Herpes Simplex 2 IgG",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 136,
+      "test_name": "Varicella Zoster IgG",
+      "test_category": "Serology",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Immune", "Non-immune"]
+    },
+    {
+      "id": 137,
+      "test_name": "H. pylori Antigen Stool",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 138,
+      "test_name": "H. pylori Antibody",
+      "test_category": "Serology",
+      "price_ugx": 20000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 139,
+      "test_name": "Anti-CCP",
+      "test_category": "Immunology",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "U/mL",
+      "normal_range": "<20"
+    },
+    {
+      "id": 140,
+      "test_name": "ANA (Anti-Nuclear Antibody)",
+      "test_category": "Immunology",
+      "price_ugx": 35000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Borderline"]
+    },
+    {
+      "id": 141,
+      "test_name": "dsDNA Antibody",
+      "test_category": "Immunology",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "IU/mL",
+      "normal_range": "<30"
+    },
+    {
+      "id": 142,
+      "test_name": "ENA Panel",
+      "test_category": "Immunology",
+      "price_ugx": 50000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 143,
+      "test_name": "ANCA",
+      "test_category": "Immunology",
+      "price_ugx": 45000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 144,
+      "test_name": "Anti-TPO",
+      "test_category": "Immunology",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "IU/mL",
+      "normal_range": "<60"
+    },
+    {
+      "id": 145,
+      "test_name": "Anti-TG",
+      "test_category": "Immunology",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "IU/mL",
+      "normal_range": "<60"
+    },
+    {
+      "id": 146,
+      "test_name": "C3 Complement",
+      "test_category": "Immunology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "90-180"
+    },
+    {
+      "id": 147,
+      "test_name": "C4 Complement",
+      "test_category": "Immunology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "10-40"
+    },
+    {
+      "id": 148,
+      "test_name": "IgG",
+      "test_category": "Immunology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "700-1600"
+    },
+    {
+      "id": 149,
+      "test_name": "IgA",
+      "test_category": "Immunology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "70-400"
+    },
+    {
+      "id": 150,
+      "test_name": "IgM",
+      "test_category": "Immunology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "40-230"
+    },
+    {
+      "id": 151,
+      "test_name": "IgE",
+      "test_category": "Immunology",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "IU/mL",
+      "normal_range": "<100"
+    },
+    {
+      "id": 152,
+      "test_name": "Pregnancy Test (Urine)",
+      "test_category": "Hormones",
+      "price_ugx": 8000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 153,
+      "test_name": "Pregnancy Test (Serum)",
+      "test_category": "Hormones",
+      "price_ugx": 12000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 154,
+      "test_name": "Drug Screen (Urine)",
+      "test_category": "Toxicology",
+      "price_ugx": 40000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 155,
+      "test_name": "Alcohol Level",
+      "test_category": "Toxicology",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "<0.08"
+    },
+    {
+      "id": 156,
+      "test_name": "Lead Level",
+      "test_category": "Toxicology",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "µg/dL",
+      "normal_range": "<10"
+    },
+    {
+      "id": 157,
+      "test_name": "Mercury Level",
+      "test_category": "Toxicology",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "µg/L",
+      "normal_range": "<10"
+    },
+    {
+      "id": 158,
+      "test_name": "Arsenic Level",
+      "test_category": "Toxicology",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "µg/L",
+      "normal_range": "<10"
+    },
+    {
+      "id": 159,
+      "test_name": "Cadmium Level",
+      "test_category": "Toxicology",
+      "price_ugx": 40000,
+      "results_format": "NUMERIC",
+      "unit": "µg/L",
+      "normal_range": "<1"
+    },
+    {
+      "id": 160,
+      "test_name": "Lithium Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "0.6-1.2"
+    },
+    {
+      "id": 161,
+      "test_name": "Digoxin Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "0.8-2.0"
+    },
+    {
+      "id": 162,
+      "test_name": "Phenytoin Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "10-20"
+    },
+    {
+      "id": 163,
+      "test_name": "Carbamazepine Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "4-12"
+    },
+    {
+      "id": 164,
+      "test_name": "Valproic Acid Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "50-100"
+    },
+    {
+      "id": 165,
+      "test_name": "Theophylline Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "10-20"
+    },
+    {
+      "id": 166,
+      "test_name": "Gentamicin Level",
+      "test_category": "Toxicology",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "Peak: 5-10, Trough: <2"
+    },
+    {
+      "id": 167,
+      "test_name": "Vancomycin Level",
+      "test_category": "Toxicology",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "Trough: 10-20"
+    },
+    {
+      "id": 168,
+      "test_name": "Cyclosporine Level",
+      "test_category": "Toxicology",
+      "price_ugx": 45000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "100-400"
+    },
+    {
+      "id": 169,
+      "test_name": "Tacrolimus Level",
+      "test_category": "Toxicology",
+      "price_ugx": 45000,
+      "results_format": "NUMERIC",
+      "unit": "ng/mL",
+      "normal_range": "5-20"
+    },
+    {
+      "id": 170,
+      "test_name": "Mycophenolate Level",
+      "test_category": "Toxicology",
+      "price_ugx": 45000,
+      "results_format": "NUMERIC",
+      "unit": "µg/mL",
+      "normal_range": "1.0-3.5"
+    },
+    {
+      "id": 171,
+      "test_name": "Serum Osmolality",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mOsm/kg",
+      "normal_range": "275-295"
+    },
+    {
+      "id": 172,
+      "test_name": "Urine Osmolality",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mOsm/kg",
+      "normal_range": "50-1200"
+    },
+    {
+      "id": 173,
+      "test_name": "Urine Protein/Creatinine Ratio",
+      "test_category": "Chemistry",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "mg/g",
+      "normal_range": "<150"
+    },
+    {
+      "id": 174,
+      "test_name": "Microalbuminuria",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mg/L",
+      "normal_range": "<30"
+    },
+    {
+      "id": 175,
+      "test_name": "Bence Jones Protein",
+      "test_category": "Chemistry",
+      "price_ugx": 25000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative"]
+    },
+    {
+      "id": 176,
+      "test_name": "Haptoglobin",
+      "test_category": "Chemistry",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "30-200"
+    },
+    {
+      "id": 177,
+      "test_name": "Ceruloplasmin",
+      "test_category": "Chemistry",
+      "price_ugx": 30000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "20-60"
+    },
+    {
+      "id": 178,
+      "test_name": "Alpha-1 Antitrypsin",
+      "test_category": "Chemistry",
+      "price_ugx": 35000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "90-200"
+    },
+    {
+      "id": 179,
+      "test_name": "Ammonia",
+      "test_category": "Chemistry",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "µmol/L",
+      "normal_range": "11-35"
+    },
+    {
+      "id": 180,
+      "test_name": "Lactic Acid",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "0.5-2.2"
+    },
+    {
+      "id": 181,
+      "test_name": "Pyruvic Acid",
+      "test_category": "Chemistry",
+      "price_ugx": 25000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "0.3-0.9"
+    },
+    {
+      "id": 182,
+      "test_name": "Acetone",
+      "test_category": "Chemistry",
+      "price_ugx": 18000,
+      "results_format": "NUMERIC",
+      "unit": "mg/dL",
+      "normal_range": "<2"
+    },
+    {
+      "id": 183,
+      "test_name": "Beta-Hydroxybutyrate",
+      "test_category": "Chemistry",
+      "price_ugx": 20000,
+      "results_format": "NUMERIC",
+      "unit": "mmol/L",
+      "normal_range": "<0.6"
+    },
+    {
+      "id": 184,
+      "test_name": "Serum Ketones",
+      "test_category": "Chemistry",
+      "price_ugx": 15000,
+      "results_format": "TEXT",
+      "options": ["Positive", "Negative", "Trace", "Small", "Moderate", "Large"]
+    },
+    {
+      "id": 185,
+      "test_name": "CSF Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 35000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 186,
+      "test_name": "Blood Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 40000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 187,
+      "test_name": "Wound Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 30000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 188,
+      "test_name": "Throat Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 189,
+      "test_name": "Ear Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 190,
+      "test_name": "Eye Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 191,
+      "test_name": "High Vaginal Swab (HVS)",
+      "test_category": "Microbiology",
+      "price_ugx": 20000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 192,
+      "test_name": "Endocervical Swab",
+      "test_category": "Microbiology",
+      "price_ugx": 20000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 193,
+      "test_name": "Urethral Swab",
+      "test_category": "Microbiology",
+      "price_ugx": 20000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 194,
+      "test_name": "Anal Swab",
+      "test_category": "Microbiology",
+      "price_ugx": 20000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 195,
+      "test_name": "Semen Culture & Sensitivity",
+      "test_category": "Microbiology",
+      "price_ugx": 30000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 196,
+      "test_name": "Prostatic Secretion Culture",
+      "test_category": "Microbiology",
+      "price_ugx": 25000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 197,
+      "test_name": "Bone Marrow Aspiration",
+      "test_category": "Hematology",
+      "price_ugx": 50000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 198,
+      "test_name": "Lymph Node Biopsy",
+      "test_category": "Histopathology",
+      "price_ugx": 60000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 199,
+      "test_name": "Skin Biopsy",
+      "test_category": "Histopathology",
+      "price_ugx": 40000,
+      "results_format": "PARAGRAPH"
+    },
+    {
+      "id": 200,
+      "test_name": "Liver Biopsy",
+      "test_category": "Histopathology",
+      "price_ugx": 80000,
+      "results_format": "PARAGRAPH"
+    }
+  ],
+  "results_formats": [
+    {
+      "format": "TABLE",
+      "description": "Multiple parameters with values (e.g., CBC, Urinalysis)"
+    },
+    {
+      "format": "TEXT",
+      "description": "Single text selection from options (e.g., Positive/Negative)"
+    },
+    {
+      "format": "NUMERIC",
+      "description": "Single numeric value with unit (e.g., RBS, HB)"
+    },
+    {
+      "format": "PARAGRAPH",
+      "description": "Free text paragraph (e.g., Comments, Culture results)"
+    }
+  ],
+  "categories": [
+    "Hematology",
+    "Chemistry",
+    "Microbiology",
+    "Serology",
+    "Immunology",
+    "Parasitology",
+    "Hormones",
+    "Tumor Markers",
+    "Blood Bank",
+    "Coagulation",
+    "Body Fluids",
+    "Fertility",
+    "Urine",
+    "Toxicology",
+    "Lipid Profile",
+    "Electrolytes",
+    "Histopathology"
+  ]
+}

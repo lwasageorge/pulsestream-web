@@ -1,0 +1,1300 @@
+﻿{
+  "currencies": [
+    {
+      "code": "AFN",
+      "name": "Afghan Afghani",
+      "symbol": "؋",
+      "country": "Afghanistan",
+      "fractional_unit": "Pul",
+      "decimal_places": 2
+    },
+    {
+      "code": "ALL",
+      "name": "Albanian Lek",
+      "symbol": "L",
+      "country": "Albania",
+      "fractional_unit": "Qindarka",
+      "decimal_places": 2
+    },
+    {
+      "code": "DZD",
+      "name": "Algerian Dinar",
+      "symbol": "د.ج",
+      "country": "Algeria",
+      "fractional_unit": "Centime",
+      "decimal_places": 2
+    },
+    {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$",
+      "country": "United States",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "country": "European Union",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "AOA",
+      "name": "Angolan Kwanza",
+      "symbol": "Kz",
+      "country": "Angola",
+      "fractional_unit": "Cêntimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$",
+      "country": "Organisation of Eastern Caribbean States",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "ARS",
+      "name": "Argentine Peso",
+      "symbol": "$",
+      "country": "Argentina",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "AMD",
+      "name": "Armenian Dram",
+      "symbol": "֏",
+      "country": "Armenia",
+      "fractional_unit": "Luma",
+      "decimal_places": 2
+    },
+    {
+      "code": "AWG",
+      "name": "Aruban Florin",
+      "symbol": "ƒ",
+      "country": "Aruba",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "symbol": "$",
+      "country": "Australia",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "AZN",
+      "name": "Azerbaijani Manat",
+      "symbol": "₼",
+      "country": "Azerbaijan",
+      "fractional_unit": "Qəpik",
+      "decimal_places": 2
+    },
+    {
+      "code": "BSD",
+      "name": "Bahamian Dollar",
+      "symbol": "$",
+      "country": "Bahamas",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "BHD",
+      "name": "Bahraini Dinar",
+      "symbol": ".د.ب",
+      "country": "Bahrain",
+      "fractional_unit": "Fils",
+      "decimal_places": 3
+    },
+    {
+      "code": "BDT",
+      "name": "Bangladeshi Taka",
+      "symbol": "৳",
+      "country": "Bangladesh",
+      "fractional_unit": "Poisha",
+      "decimal_places": 2
+    },
+    {
+      "code": "BBD",
+      "name": "Barbadian Dollar",
+      "symbol": "$",
+      "country": "Barbados",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "BYN",
+      "name": "Belarusian Ruble",
+      "symbol": "Br",
+      "country": "Belarus",
+      "fractional_unit": "Kopek",
+      "decimal_places": 2
+    },
+    {
+      "code": "BZD",
+      "name": "Belize Dollar",
+      "symbol": "$",
+      "country": "Belize",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA",
+      "country": "West African Economic and Monetary Union",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "BMD",
+      "name": "Bermudian Dollar",
+      "symbol": "$",
+      "country": "Bermuda",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "INR",
+      "name": "Indian Rupee",
+      "symbol": "₹",
+      "country": "India",
+      "fractional_unit": "Paise",
+      "decimal_places": 2
+    },
+    {
+      "code": "BTN",
+      "name": "Bhutanese Ngultrum",
+      "symbol": "Nu.",
+      "country": "Bhutan",
+      "fractional_unit": "Chetrum",
+      "decimal_places": 2
+    },
+    {
+      "code": "BOB",
+      "name": "Bolivian Boliviano",
+      "symbol": "Bs.",
+      "country": "Bolivia",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "BOV",
+      "name": "Bolivian Mvdol (funds code)",
+      "symbol": "",
+      "country": "Bolivia",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "BAM",
+      "name": "Bosnia and Herzegovina Convertible Mark",
+      "symbol": "KM",
+      "country": "Bosnia and Herzegovina",
+      "fractional_unit": "Fening",
+      "decimal_places": 2
+    },
+    {
+      "code": "BWP",
+      "name": "Botswana Pula",
+      "symbol": "P",
+      "country": "Botswana",
+      "fractional_unit": "Thebe",
+      "decimal_places": 2
+    },
+    {
+      "code": "BRL",
+      "name": "Brazilian Real",
+      "symbol": "R$",
+      "country": "Brazil",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "BND",
+      "name": "Brunei Dollar",
+      "symbol": "$",
+      "country": "Brunei",
+      "fractional_unit": "Sen",
+      "decimal_places": 2
+    },
+    {
+      "code": "BGN",
+      "name": "Bulgarian Lev",
+      "symbol": "лв",
+      "country": "Bulgaria",
+      "fractional_unit": "Stotinka",
+      "decimal_places": 2
+    },
+    {
+      "code": "BIF",
+      "name": "Burundian Franc",
+      "symbol": "FBu",
+      "country": "Burundi",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "CVE",
+      "name": "Cape Verdean Escudo",
+      "symbol": "$",
+      "country": "Cape Verde",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "KHR",
+      "name": "Cambodian Riel",
+      "symbol": "៛",
+      "country": "Cambodia",
+      "fractional_unit": "Sen",
+      "decimal_places": 2
+    },
+    {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA",
+      "country": "Central African CFA Franc zone",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "CAD",
+      "name": "Canadian Dollar",
+      "symbol": "$",
+      "country": "Canada",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "KYD",
+      "name": "Cayman Islands Dollar",
+      "symbol": "$",
+      "country": "Cayman Islands",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "CLP",
+      "name": "Chilean Peso",
+      "symbol": "$",
+      "country": "Chile",
+      "fractional_unit": "Centavo",
+      "decimal_places": 0
+    },
+    {
+      "code": "CLF",
+      "name": "Unidad de Fomento (funds code)",
+      "symbol": "UF",
+      "country": "Chile",
+      "fractional_unit": "",
+      "decimal_places": 4
+    },
+    {
+      "code": "CNY",
+      "name": "Chinese Yuan",
+      "symbol": "¥",
+      "country": "China",
+      "fractional_unit": "Fen",
+      "decimal_places": 2
+    },
+    {
+      "code": "COP",
+      "name": "Colombian Peso",
+      "symbol": "$",
+      "country": "Colombia",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "COU",
+      "name": "Unidad de Valor Real (UVR) (funds code)",
+      "symbol": "",
+      "country": "Colombia",
+      "fractional_unit": "",
+      "decimal_places": 2
+    },
+    {
+      "code": "KMF",
+      "name": "Comorian Franc",
+      "symbol": "CF",
+      "country": "Comoros",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "CDF",
+      "name": "Congolese Franc",
+      "symbol": "FC",
+      "country": "Democratic Republic of the Congo",
+      "fractional_unit": "Centime",
+      "decimal_places": 2
+    },
+    {
+      "code": "NZD",
+      "name": "New Zealand Dollar",
+      "symbol": "$",
+      "country": "New Zealand",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "CRC",
+      "name": "Costa Rican Colón",
+      "symbol": "₡",
+      "country": "Costa Rica",
+      "fractional_unit": "Céntimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "HRK",
+      "name": "Croatian Kuna",
+      "symbol": "kn",
+      "country": "Croatia",
+      "fractional_unit": "Lipa",
+      "decimal_places": 2
+    },
+    {
+      "code": "CUP",
+      "name": "Cuban Peso",
+      "symbol": "$",
+      "country": "Cuba",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "CUC",
+      "name": "Cuban Convertible Peso",
+      "symbol": "$",
+      "country": "Cuba",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "ANG",
+      "name": "Netherlands Antillean Guilder",
+      "symbol": "ƒ",
+      "country": "Curaçao and Sint Maarten",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "CZK",
+      "name": "Czech Koruna",
+      "symbol": "Kč",
+      "country": "Czech Republic",
+      "fractional_unit": "Haléř",
+      "decimal_places": 2
+    },
+    {
+      "code": "DKK",
+      "name": "Danish Krone",
+      "symbol": "kr",
+      "country": "Denmark",
+      "fractional_unit": "Øre",
+      "decimal_places": 2
+    },
+    {
+      "code": "DJF",
+      "name": "Djiboutian Franc",
+      "symbol": "Fdj",
+      "country": "Djibouti",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "DOP",
+      "name": "Dominican Peso",
+      "symbol": "$",
+      "country": "Dominican Republic",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "EGP",
+      "name": "Egyptian Pound",
+      "symbol": "£",
+      "country": "Egypt",
+      "fractional_unit": "Piastre",
+      "decimal_places": 2
+    },
+    {
+      "code": "SVC",
+      "name": "Salvadoran Colón",
+      "symbol": "$",
+      "country": "El Salvador",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "ERN",
+      "name": "Eritrean Nakfa",
+      "symbol": "Nfk",
+      "country": "Eritrea",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "ETB",
+      "name": "Ethiopian Birr",
+      "symbol": "Br",
+      "country": "Ethiopia",
+      "fractional_unit": "Santim",
+      "decimal_places": 2
+    },
+    {
+      "code": "FKP",
+      "name": "Falkland Islands Pound",
+      "symbol": "£",
+      "country": "Falkland Islands",
+      "fractional_unit": "Penny",
+      "decimal_places": 2
+    },
+    {
+      "code": "FJD",
+      "name": "Fijian Dollar",
+      "symbol": "$",
+      "country": "Fiji",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "XPF",
+      "name": "CFP Franc",
+      "symbol": "₣",
+      "country": "French Polynesia, New Caledonia, Wallis and Futuna",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "GMD",
+      "name": "Gambian Dalasi",
+      "symbol": "D",
+      "country": "Gambia",
+      "fractional_unit": "Butut",
+      "decimal_places": 2
+    },
+    {
+      "code": "GEL",
+      "name": "Georgian Lari",
+      "symbol": "₾",
+      "country": "Georgia",
+      "fractional_unit": "Tetri",
+      "decimal_places": 2
+    },
+    {
+      "code": "GHS",
+      "name": "Ghanaian Cedi",
+      "symbol": "₵",
+      "country": "Ghana",
+      "fractional_unit": "Pesewa",
+      "decimal_places": 2
+    },
+    {
+      "code": "GIP",
+      "name": "Gibraltar Pound",
+      "symbol": "£",
+      "country": "Gibraltar",
+      "fractional_unit": "Penny",
+      "decimal_places": 2
+    },
+    {
+      "code": "GTQ",
+      "name": "Guatemalan Quetzal",
+      "symbol": "Q",
+      "country": "Guatemala",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "GBP",
+      "name": "British Pound",
+      "symbol": "£",
+      "country": "United Kingdom",
+      "fractional_unit": "Penny",
+      "decimal_places": 2
+    },
+    {
+      "code": "GNF",
+      "name": "Guinean Franc",
+      "symbol": "FG",
+      "country": "Guinea",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "GYD",
+      "name": "Guyanese Dollar",
+      "symbol": "$",
+      "country": "Guyana",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "HTG",
+      "name": "Haitian Gourde",
+      "symbol": "G",
+      "country": "Haiti",
+      "fractional_unit": "Centime",
+      "decimal_places": 2
+    },
+    {
+      "code": "HNL",
+      "name": "Honduran Lempira",
+      "symbol": "L",
+      "country": "Honduras",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "HKD",
+      "name": "Hong Kong Dollar",
+      "symbol": "$",
+      "country": "Hong Kong",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "HUF",
+      "name": "Hungarian Forint",
+      "symbol": "Ft",
+      "country": "Hungary",
+      "fractional_unit": "Fillér",
+      "decimal_places": 2
+    },
+    {
+      "code": "ISK",
+      "name": "Icelandic Króna",
+      "symbol": "kr",
+      "country": "Iceland",
+      "fractional_unit": "Eyrir",
+      "decimal_places": 0
+    },
+    {
+      "code": "IDR",
+      "name": "Indonesian Rupiah",
+      "symbol": "Rp",
+      "country": "Indonesia",
+      "fractional_unit": "Sen",
+      "decimal_places": 2
+    },
+    {
+      "code": "XDR",
+      "name": "Special Drawing Rights",
+      "symbol": "SDR",
+      "country": "International Monetary Fund",
+      "fractional_unit": "",
+      "decimal_places": 0
+    },
+    {
+      "code": "IRR",
+      "name": "Iranian Rial",
+      "symbol": "﷼",
+      "country": "Iran",
+      "fractional_unit": "Dinar",
+      "decimal_places": 2
+    },
+    {
+      "code": "IQD",
+      "name": "Iraqi Dinar",
+      "symbol": "ع.د",
+      "country": "Iraq",
+      "fractional_unit": "Fils",
+      "decimal_places": 3
+    },
+    {
+      "code": "ILS",
+      "name": "Israeli New Shekel",
+      "symbol": "₪",
+      "country": "Israel",
+      "fractional_unit": "Agora",
+      "decimal_places": 2
+    },
+    {
+      "code": "JMD",
+      "name": "Jamaican Dollar",
+      "symbol": "$",
+      "country": "Jamaica",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "JPY",
+      "name": "Japanese Yen",
+      "symbol": "¥",
+      "country": "Japan",
+      "fractional_unit": "Sen",
+      "decimal_places": 0
+    },
+    {
+      "code": "JOD",
+      "name": "Jordanian Dinar",
+      "symbol": "د.ا",
+      "country": "Jordan",
+      "fractional_unit": "Piastre",
+      "decimal_places": 3
+    },
+    {
+      "code": "KZT",
+      "name": "Kazakhstani Tenge",
+      "symbol": "₸",
+      "country": "Kazakhstan",
+      "fractional_unit": "Tiyn",
+      "decimal_places": 2
+    },
+    {
+      "code": "KES",
+      "name": "Kenyan Shilling",
+      "symbol": "KSh",
+      "country": "Kenya",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "KPW",
+      "name": "North Korean Won",
+      "symbol": "₩",
+      "country": "North Korea",
+      "fractional_unit": "Chon",
+      "decimal_places": 2
+    },
+    {
+      "code": "KRW",
+      "name": "South Korean Won",
+      "symbol": "₩",
+      "country": "South Korea",
+      "fractional_unit": "Jeon",
+      "decimal_places": 0
+    },
+    {
+      "code": "KWD",
+      "name": "Kuwaiti Dinar",
+      "symbol": "د.ك",
+      "country": "Kuwait",
+      "fractional_unit": "Fils",
+      "decimal_places": 3
+    },
+    {
+      "code": "KGS",
+      "name": "Kyrgyzstani Som",
+      "symbol": "с",
+      "country": "Kyrgyzstan",
+      "fractional_unit": "Tyiyn",
+      "decimal_places": 2
+    },
+    {
+      "code": "LAK",
+      "name": "Lao Kip",
+      "symbol": "₭",
+      "country": "Laos",
+      "fractional_unit": "Att",
+      "decimal_places": 2
+    },
+    {
+      "code": "LBP",
+      "name": "Lebanese Pound",
+      "symbol": "ل.ل",
+      "country": "Lebanon",
+      "fractional_unit": "Piastre",
+      "decimal_places": 2
+    },
+    {
+      "code": "LSL",
+      "name": "Lesotho Loti",
+      "symbol": "L",
+      "country": "Lesotho",
+      "fractional_unit": "Sente",
+      "decimal_places": 2
+    },
+    {
+      "code": "ZAR",
+      "name": "South African Rand",
+      "symbol": "R",
+      "country": "South Africa",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "LRD",
+      "name": "Liberian Dollar",
+      "symbol": "$",
+      "country": "Liberia",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "LYD",
+      "name": "Libyan Dinar",
+      "symbol": "ل.د",
+      "country": "Libya",
+      "fractional_unit": "Dirham",
+      "decimal_places": 3
+    },
+    {
+      "code": "CHF",
+      "name": "Swiss Franc",
+      "symbol": "CHF",
+      "country": "Switzerland",
+      "fractional_unit": "Rappen",
+      "decimal_places": 2
+    },
+    {
+      "code": "MOP",
+      "name": "Macanese Pataca",
+      "symbol": "MOP$",
+      "country": "Macau",
+      "fractional_unit": "Avo",
+      "decimal_places": 2
+    },
+    {
+      "code": "MKD",
+      "name": "Macedonian Denar",
+      "symbol": "ден",
+      "country": "North Macedonia",
+      "fractional_unit": "Deni",
+      "decimal_places": 2
+    },
+    {
+      "code": "MGA",
+      "name": "Malagasy Ariary",
+      "symbol": "Ar",
+      "country": "Madagascar",
+      "fractional_unit": "Iraimbilanja",
+      "decimal_places": 2
+    },
+    {
+      "code": "MWK",
+      "name": "Malawian Kwacha",
+      "symbol": "MK",
+      "country": "Malawi",
+      "fractional_unit": "Tambala",
+      "decimal_places": 2
+    },
+    {
+      "code": "MYR",
+      "name": "Malaysian Ringgit",
+      "symbol": "RM",
+      "country": "Malaysia",
+      "fractional_unit": "Sen",
+      "decimal_places": 2
+    },
+    {
+      "code": "MVR",
+      "name": "Maldivian Rufiyaa",
+      "symbol": "Rf",
+      "country": "Maldives",
+      "fractional_unit": "Laari",
+      "decimal_places": 2
+    },
+    {
+      "code": "MRU",
+      "name": "Mauritanian Ouguiya",
+      "symbol": "UM",
+      "country": "Mauritania",
+      "fractional_unit": "Khoums",
+      "decimal_places": 2
+    },
+    {
+      "code": "MUR",
+      "name": "Mauritian Rupee",
+      "symbol": "₨",
+      "country": "Mauritius",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "MXN",
+      "name": "Mexican Peso",
+      "symbol": "$",
+      "country": "Mexico",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "MDL",
+      "name": "Moldovan Leu",
+      "symbol": "L",
+      "country": "Moldova",
+      "fractional_unit": "Ban",
+      "decimal_places": 2
+    },
+    {
+      "code": "MNT",
+      "name": "Mongolian Tögrög",
+      "symbol": "₮",
+      "country": "Mongolia",
+      "fractional_unit": "Möngö",
+      "decimal_places": 2
+    },
+    {
+      "code": "MAD",
+      "name": "Moroccan Dirham",
+      "symbol": "د.م.",
+      "country": "Morocco",
+      "fractional_unit": "Centime",
+      "decimal_places": 2
+    },
+    {
+      "code": "MZN",
+      "name": "Mozambican Metical",
+      "symbol": "MT",
+      "country": "Mozambique",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "MMK",
+      "name": "Myanmar Kyat",
+      "symbol": "K",
+      "country": "Myanmar",
+      "fractional_unit": "Pya",
+      "decimal_places": 2
+    },
+    {
+      "code": "NAD",
+      "name": "Namibian Dollar",
+      "symbol": "$",
+      "country": "Namibia",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "NPR",
+      "name": "Nepalese Rupee",
+      "symbol": "₨",
+      "country": "Nepal",
+      "fractional_unit": "Paisa",
+      "decimal_places": 2
+    },
+    {
+      "code": "NIO",
+      "name": "Nicaraguan Córdoba",
+      "symbol": "C$",
+      "country": "Nicaragua",
+      "fractional_unit": "Centavo",
+      "decimal_places": 2
+    },
+    {
+      "code": "NGN",
+      "name": "Nigerian Naira",
+      "symbol": "₦",
+      "country": "Nigeria",
+      "fractional_unit": "Kobo",
+      "decimal_places": 2
+    },
+    {
+      "code": "OMR",
+      "name": "Omani Rial",
+      "symbol": "ر.ع.",
+      "country": "Oman",
+      "fractional_unit": "Baisa",
+      "decimal_places": 3
+    },
+    {
+      "code": "PKR",
+      "name": "Pakistani Rupee",
+      "symbol": "₨",
+      "country": "Pakistan",
+      "fractional_unit": "Paisa",
+      "decimal_places": 2
+    },
+    {
+      "code": "PAB",
+      "name": "Panamanian Balboa",
+      "symbol": "B/.",
+      "country": "Panama",
+      "fractional_unit": "Centésimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "PGK",
+      "name": "Papua New Guinean Kina",
+      "symbol": "K",
+      "country": "Papua New Guinea",
+      "fractional_unit": "Toea",
+      "decimal_places": 2
+    },
+    {
+      "code": "PYG",
+      "name": "Paraguayan Guaraní",
+      "symbol": "₲",
+      "country": "Paraguay",
+      "fractional_unit": "Céntimo",
+      "decimal_places": 0
+    },
+    {
+      "code": "PEN",
+      "name": "Peruvian Sol",
+      "symbol": "S/",
+      "country": "Peru",
+      "fractional_unit": "Céntimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "PHP",
+      "name": "Philippine Peso",
+      "symbol": "₱",
+      "country": "Philippines",
+      "fractional_unit": "Sentimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "PLN",
+      "name": "Polish Złoty",
+      "symbol": "zł",
+      "country": "Poland",
+      "fractional_unit": "Grosz",
+      "decimal_places": 2
+    },
+    {
+      "code": "QAR",
+      "name": "Qatari Riyal",
+      "symbol": "ر.ق",
+      "country": "Qatar",
+      "fractional_unit": "Dirham",
+      "decimal_places": 2
+    },
+    {
+      "code": "RON",
+      "name": "Romanian Leu",
+      "symbol": "lei",
+      "country": "Romania",
+      "fractional_unit": "Ban",
+      "decimal_places": 2
+    },
+    {
+      "code": "RUB",
+      "name": "Russian Ruble",
+      "symbol": "₽",
+      "country": "Russia",
+      "fractional_unit": "Kopek",
+      "decimal_places": 2
+    },
+    {
+      "code": "RWF",
+      "name": "Rwandan Franc",
+      "symbol": "FRw",
+      "country": "Rwanda",
+      "fractional_unit": "Centime",
+      "decimal_places": 0
+    },
+    {
+      "code": "SHP",
+      "name": "Saint Helena Pound",
+      "symbol": "£",
+      "country": "Saint Helena",
+      "fractional_unit": "Penny",
+      "decimal_places": 2
+    },
+    {
+      "code": "WST",
+      "name": "Samoan Tālā",
+      "symbol": "T",
+      "country": "Samoa",
+      "fractional_unit": "Sene",
+      "decimal_places": 2
+    },
+    {
+      "code": "STN",
+      "name": "São Tomé and Príncipe Dobra",
+      "symbol": "Db",
+      "country": "São Tomé and Príncipe",
+      "fractional_unit": "Cêntimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "SAR",
+      "name": "Saudi Riyal",
+      "symbol": "ر.س",
+      "country": "Saudi Arabia",
+      "fractional_unit": "Halala",
+      "decimal_places": 2
+    },
+    {
+      "code": "RSD",
+      "name": "Serbian Dinar",
+      "symbol": "дин",
+      "country": "Serbia",
+      "fractional_unit": "Para",
+      "decimal_places": 2
+    },
+    {
+      "code": "SCR",
+      "name": "Seychellois Rupee",
+      "symbol": "₨",
+      "country": "Seychelles",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SLL",
+      "name": "Sierra Leonean Leone",
+      "symbol": "Le",
+      "country": "Sierra Leone",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SGD",
+      "name": "Singapore Dollar",
+      "symbol": "$",
+      "country": "Singapore",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SBD",
+      "name": "Solomon Islands Dollar",
+      "symbol": "$",
+      "country": "Solomon Islands",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SOS",
+      "name": "Somali Shilling",
+      "symbol": "Sh",
+      "country": "Somalia",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SSP",
+      "name": "South Sudanese Pound",
+      "symbol": "£",
+      "country": "South Sudan",
+      "fractional_unit": "Piastre",
+      "decimal_places": 2
+    },
+    {
+      "code": "LKR",
+      "name": "Sri Lankan Rupee",
+      "symbol": "Rs",
+      "country": "Sri Lanka",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SDG",
+      "name": "Sudanese Pound",
+      "symbol": "ج.س.",
+      "country": "Sudan",
+      "fractional_unit": "Piastre",
+      "decimal_places": 2
+    },
+    {
+      "code": "SRD",
+      "name": "Surinamese Dollar",
+      "symbol": "$",
+      "country": "Suriname",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SZL",
+      "name": "Swazi Lilangeni",
+      "symbol": "L",
+      "country": "Eswatini",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "SEK",
+      "name": "Swedish Krona",
+      "symbol": "kr",
+      "country": "Sweden",
+      "fractional_unit": "Öre",
+      "decimal_places": 2
+    },
+    {
+      "code": "SYP",
+      "name": "Syrian Pound",
+      "symbol": "£",
+      "country": "Syria",
+      "fractional_unit": "Piastre",
+      "decimal_places": 2
+    },
+    {
+      "code": "TWD",
+      "name": "New Taiwan Dollar",
+      "symbol": "$",
+      "country": "Taiwan",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "TJS",
+      "name": "Tajikistani Somoni",
+      "symbol": "SM",
+      "country": "Tajikistan",
+      "fractional_unit": "Diram",
+      "decimal_places": 2
+    },
+    {
+      "code": "TZS",
+      "name": "Tanzanian Shilling",
+      "symbol": "TSh",
+      "country": "Tanzania",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "THB",
+      "name": "Thai Baht",
+      "symbol": "฿",
+      "country": "Thailand",
+      "fractional_unit": "Satang",
+      "decimal_places": 2
+    },
+    {
+      "code": "TOP",
+      "name": "Tongan Paʻanga",
+      "symbol": "T$",
+      "country": "Tonga",
+      "fractional_unit": "Seniti",
+      "decimal_places": 2
+    },
+    {
+      "code": "TTD",
+      "name": "Trinidad and Tobago Dollar",
+      "symbol": "$",
+      "country": "Trinidad and Tobago",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    },
+    {
+      "code": "TND",
+      "name": "Tunisian Dinar",
+      "symbol": "د.ت",
+      "country": "Tunisia",
+      "fractional_unit": "Millime",
+      "decimal_places": 3
+    },
+    {
+      "code": "TRY",
+      "name": "Turkish Lira",
+      "symbol": "₺",
+      "country": "Turkey",
+      "fractional_unit": "Kuruş",
+      "decimal_places": 2
+    },
+    {
+      "code": "TMT",
+      "name": "Turkmenistani Manat",
+      "symbol": "m",
+      "country": "Turkmenistan",
+      "fractional_unit": "Tennesi",
+      "decimal_places": 2
+    },
+    {
+      "code": "UGX",
+      "name": "Ugandan Shilling",
+      "symbol": "USh",
+      "country": "Uganda",
+      "fractional_unit": "Cent",
+      "decimal_places": 0
+    },
+    {
+      "code": "UAH",
+      "name": "Ukrainian Hryvnia",
+      "symbol": "₴",
+      "country": "Ukraine",
+      "fractional_unit": "Kopiyka",
+      "decimal_places": 2
+    },
+    {
+      "code": "AED",
+      "name": "United Arab Emirates Dirham",
+      "symbol": "د.إ",
+      "country": "United Arab Emirates",
+      "fractional_unit": "Fils",
+      "decimal_places": 2
+    },
+    {
+      "code": "UYU",
+      "name": "Uruguayan Peso",
+      "symbol": "$",
+      "country": "Uruguay",
+      "fractional_unit": "Centésimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "UZS",
+      "name": "Uzbekistani Som",
+      "symbol": "so'm",
+      "country": "Uzbekistan",
+      "fractional_unit": "Tiyin",
+      "decimal_places": 2
+    },
+    {
+      "code": "VUV",
+      "name": "Vanuatu Vatu",
+      "symbol": "VT",
+      "country": "Vanuatu",
+      "fractional_unit": "None",
+      "decimal_places": 0
+    },
+    {
+      "code": "VES",
+      "name": "Venezuelan Bolívar Soberano",
+      "symbol": "Bs.S",
+      "country": "Venezuela",
+      "fractional_unit": "Céntimo",
+      "decimal_places": 2
+    },
+    {
+      "code": "VND",
+      "name": "Vietnamese Đồng",
+      "symbol": "₫",
+      "country": "Vietnam",
+      "fractional_unit": "Hào",
+      "decimal_places": 0
+    },
+    {
+      "code": "YER",
+      "name": "Yemeni Rial",
+      "symbol": "﷼",
+      "country": "Yemen",
+      "fractional_unit": "Fils",
+      "decimal_places": 2
+    },
+    {
+      "code": "ZMW",
+      "name": "Zambian Kwacha",
+      "symbol": "ZK",
+      "country": "Zambia",
+      "fractional_unit": "Ngwee",
+      "decimal_places": 2
+    },
+    {
+      "code": "ZWL",
+      "name": "Zimbabwean Dollar",
+      "symbol": "$",
+      "country": "Zimbabwe",
+      "fractional_unit": "Cent",
+      "decimal_places": 2
+    }
+  ],
+  "currency_categories": {
+    "major_currencies": ["USD", "EUR", "JPY", "GBP", "AUD", "CAD", "CHF", "CNY", "HKD", "NZD"],
+    "african_currencies": ["ZAR", "EGP", "NGN", "KES", "GHS", "UGX", "TZS", "XOF", "XAF", "MAD", "DZD", "ETB", "SDG", "AOA", "MZN", "ZMW", "CDF", "MWK", "RWF", "BIF"],
+    "european_currencies": ["EUR", "GBP", "CHF", "SEK", "NOK", "DKK", "PLN", "CZK", "HUF", "RON", "BGN", "HRK", "RSD", "ALL", "ISK", "UAH", "BYN", "MDL", "GEL", "AMD"],
+    "asian_currencies": ["CNY", "JPY", "INR", "KRW", "IDR", "THB", "MYR", "SGD", "HKD", "PHP", "VND", "PKR", "BDT", "SAR", "AED", "QAR", "OMR", "KWD", "BHD", "LKR"],
+    "american_currencies": ["USD", "CAD", "MXN", "BRL", "ARS", "CLP", "COP", "PEN", "UYU", "BOB", "PYG", "GTQ", "DOP", "CRC", "PAB", "NIO", "HNL", "BZD", "TTD", "JMD"],
+    "oceanian_currencies": ["AUD", "NZD", "FJD", "PGK", "WST", "TOP", "VUV", "SBD", "KID"]
+  },
+  "currency_settings": {
+    "default_decimal_places": 2,
+    "separators": {
+      "thousands": ",",
+      "decimal": "."
+    },
+    "display_formats": ["symbol_first", "symbol_last", "code_first", "code_last"]
+  }
+}
