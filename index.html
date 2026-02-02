@@ -10,11 +10,11 @@
     <meta name="robots" content="index, follow">
     
     <meta property="og:title" content="PulseStream Lab App | Smarter Labs. Faster Workflows.">
-    <meta property="og:description" content="Download the #1 Offline Laboratory System built for Africa. Managing 200+ tests, finances, and patient reports.">
+    <meta property="og:description" content="Download the #1 Offline Laboratory System built for Africa or Launch the Web App. Managing 200+ tests, finances, and patient reports.">
     <meta property="og:image" content="images/dashboard.png">
     <meta property="og:url" content="https://lwasageorge.github.io/pulsestream-web/">
 
-    <title>PulseStream Lab App | Premium LIS for Africa</title>
+    <title>PulseStream | Web App & Premium LIS for Africa</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,6 +24,7 @@
             --primary: #0056D2;       /* Royal Blue */
             --primary-dark: #004494;  /* Deep Blue */
             --accent: #0ea5e9;        /* Sky Blue */
+            --accent-dark: #0284c7;   /* Darker Sky Blue */
             --dark: #0f172a;          /* Slate Black */
             --light: #f8fafc;         /* Medical White */
             --white: #ffffff;
@@ -46,10 +47,17 @@
 
         /* --- BUTTONS --- */
         .btn { display: inline-flex; align-items: center; gap: 8px; padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; border: none; font-size: 0.95rem; }
+        
         .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 15px rgba(0, 86, 210, 0.3); }
         .btn-primary:hover { background: var(--primary-dark); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0, 86, 210, 0.4); }
+        
+        /* New Web App Button Style */
+        .btn-web { background: var(--accent); color: white; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3); }
+        .btn-web:hover { background: var(--accent-dark); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4); }
+
         .btn-selar { background: var(--selar); color: white; width: 100%; justify-content: center; }
         .btn-selar:hover { background: #5b21b6; }
+        
         .btn-download { background: #334155; color: white; font-size: 0.85rem; padding: 0.5rem 1rem; }
         .btn-download:hover { background: var(--primary); }
 
@@ -61,9 +69,9 @@
         .nav-logo { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
         .brand-name { font-size: 1.4rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
         
-        .nav-links { display: flex; gap: 2rem; align-items: center; }
-        .nav-links a { color: var(--dark); font-weight: 500; font-size: 0.9rem; }
-        .nav-links a:hover { color: var(--primary); }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-links a.link { color: var(--dark); font-weight: 500; font-size: 0.9rem; }
+        .nav-links a.link:hover { color: var(--primary); }
 
         /* --- HERO SECTION --- */
         .hero { padding: 160px 2rem 100px; background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%); text-align: center; }
@@ -121,9 +129,9 @@
         footer { background: var(--dark); color: #94a3b8; padding: 3rem 2rem; text-align: center; font-size: 0.9rem; }
         
         /* --- MOBILE --- */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; }
+            .nav-links a.link { display: none; } /* Hide text links on mobile, keep buttons */
             .contact-container { grid-template-columns: 1fr; }
         }
         
@@ -141,12 +149,18 @@
                 <span class="brand-name">PulseStream</span>
             </div>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#tutorials">Tutorials</a>
-                <a href="#downloads">Resources</a>
-                <a href="#contact">Contact</a>
+                <a href="#features" class="link">Features</a>
+                <a href="#tutorials" class="link">Tutorials</a>
+                <a href="#contact" class="link">Contact</a>
+                
+                <a href="https://9000-firebase-studio-1769815069683.cluster-64pjnskmlbaxowh5lzq6i7v4ra.cloudworkstations.dev" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn btn-web">
+                    <i class="fa-solid fa-globe"></i> Web App
+                </a>
+
                 <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
-                    <i class="fa-brands fa-windows"></i> Download App
+                    <i class="fa-brands fa-windows"></i> Download
                 </a>
             </div>
         </div>
@@ -154,18 +168,27 @@
 
     <section class="hero">
         <h1>Smart Diagnostics.<br><span>Fast Workflows.</span></h1>
-        <p>The premium Laboratory Information System (LIS) built for Africa. Offline-ready, accurate, and designed for clinics, hospitals, and diagnostic centers.</p>
+        <p>The premium Laboratory Information System (LIS) built for Africa. Now available as a live Web App and Offline Windows Desktop application.</p>
         
         <div class="hero-buttons">
+            <a href="https://9000-firebase-studio-1769815069683.cluster-64pjnskmlbaxowh5lzq6i7v4ra.cloudworkstations.dev" 
+               target="_blank" rel="noopener noreferrer" 
+               class="btn btn-web">
+                <i class="fa-solid fa-rocket"></i> Launch Web App
+            </a>
+
             <a href="https://github.com/lwasageorge/pulsestream-web/releases/download/v1.0.0/PulseStream_Setup.exe" class="btn btn-primary">
                 <i class="fa-solid fa-download"></i> Download for Windows
             </a>
+            
             <a href="https://selar.com/64674n47qi" target="_blank" class="btn" style="background:#f3e8ff; color:var(--selar);">
                 <i class="fa-solid fa-credit-card"></i> Buy License
             </a>
         </div>
         
-        <p style="font-size: 0.9rem; color:#64748b;"><i class="fa-solid fa-shield-halved"></i> 100% Offline Capable • Windows 10/11</p>
+        <p style="font-size: 0.9rem; color:#64748b; margin-top:1.5rem;">
+            <i class="fa-solid fa-shield-halved"></i> 100% Secure • Windows 10/11 • Cloud Enabled
+        </p>
     </section>
 
     <section id="tutorials" class="video-section">
